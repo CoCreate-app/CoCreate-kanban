@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CoCreate-kanban
 A simple HTML5 and pure javascript component. Easy configuration using data-attributes and highly styleable.
 
@@ -47,3 +48,6 @@ We encourage contribution to our libraries (you might even score some nifty swag
 
 # License
 [The MIT License (MIT)](https://github.com/CoCreate-app/CoCreate-adminUI/blob/master/LICENSE)
+=======
+# Fullscreen_toggle
+>>>>>>> aef910f063cc7beb032fc433f6634b870a64fe22
