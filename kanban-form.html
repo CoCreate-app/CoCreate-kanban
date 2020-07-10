@@ -1,0 +1,320 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://cdn.cocreate.app/favicon.ico" type="image/ico" sizes="16x16">
+  
+  <!-- CoCreate UI -->
+  <link href="https://server.cocreate.app/css/CoCreate.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" crossorigin="anonymous" />    
+  
+
+  <style type="text/css">
+    .flex-half {
+      flex-grow: 1;
+      flex-basis: 50%;
+    }
+    flex-basis-50precent{
+      flex-basis: 50%;
+
+    }
+    
+    .flex-half:nth-of-type(1) {
+      padding-right: 10px;
+    }
+    
+    .flex-half:nth-of-type(2) {
+      padding-left: 10px;
+    }
+    
+    .round-iconBtn {
+      background-color: #dedede;
+      color: grey;
+      font-size: 20px;
+      border-radius: 50px;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .comment-content {
+      padding: 10px;
+      padding-right: 15px;
+      border: 1px solid #dedede;
+      border-radius: 3px 20px 20px 3px;
+    }
+    .floating-label{
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+    <div id="modal-viewport" class="hidden"></div>
+    <div data-main_content_id="content" class="nav width-100-percernt display-flex align-items-center bg-light-gray" data-scroll_effect="hide-nav" data-scroll_position="50">
+      <!--<a href="#" class="logo">Navbar</a>-->
+      <!--<a class="nav-toggle menu_icon--Vdots" data-toggle_sidenav="menuL">-->
+      <!--  <div class="circle"></div>-->
+      <!--  <div class="circle"></div>-->
+      <!--  <div class="circle"></div>-->
+      <!--  <div class="circle"></div>-->
+      <!--  <div class="circle"></div>-->
+      <!--</a>-->
+        <ul class="cocreate-scroll display-inline-flex direction-rtl font-size-20px align-items-center list-style-type-none">
+
+  			<li class="margin-right-15px"><a class="btn-modal-close"><i class="fas fa-times">
+  			  </i></a></li>
+  			<li class="margin-right-15px"><a class="btn-modal-maximize"><i data-transform_to="far fa-window-restore" class="far fa-window-maximize">
+  			  </i></a></li>
+  			<li class="margin-right-15px"><a class="btn-modal-minimize"><i class="far fa-window-minimize">
+  			  </i></a></li>
+  			
+  			<li class="margin-right-15px"><a class="fs-toggle"><i data-transform_to="fas fa-compress" class="fas fa-expand">
+  			  </i></a></li>
+  			<li class="margin-right-15px">
+  			    <a data-window_url="render.html"
+            	 data-pass_collection="modules"
+            	 data-pass_module_id="" 
+            	 data-pass_prefix="form_" 
+            	 data-pass_to="builder" 
+               data-window_width="100%"
+               data-pass_id="render">
+            		<i class="fas fa-palette"></i>
+          		 <div data-pass_collection="modules"
+					   data-pass_module_id=""
+				       data-pass_prefix=""
+					   data-pass_to="render"
+					   class="sessionBuilderUI_Id">
+	  			 </div>
+            </a>
+        </li>
+
+  			<li class="margin-right-15px"><a data-collection="module_activity" data-document_id="" data-pass_id="form-fields" class="delete-document btn-modal-close"><i class="far fa-trash-alt"></i></a></li>
+			 </ul>
+    </div>
+		<div class="cocreate-container padding-20px-all" data-main_content_id="content">
+
+        <form data-realtime="true" data-collection="module_activity" class="mbottom-75">
+
+          <input type="hidden" name="module_id" data-pass_value_id="module_id" data-pass_id="form-fields" placeholder="Module Id">
+         
+          <input type="text" name="name" data-pass_id="form-fields" class="floating-label" placeholder="Title">
+          
+          <textarea name="description" data-pass_id="form-fields"  placeholder="Description" class="floating-label"></textarea>
+  
+          <div class="padding-20px-top display-flex flex-wrap-wrap">
+            <div class="flex-half padding-10px-right">
+              
+              <!-- CoCreate Select -->
+              <div class="select--field sortable floating-label" data-collection="module_activity" name="stage" placeholder="Stage" data-pass_id="form-fields"data-realtime="true">
+                <input class="template-search" placeholder="Search" data-template_id="stage">
+                <ul data-fetch_collection="module_activity" data-pass_to="me1234" data-template_id="stage" data-fetch_name="module_id" data-fetch_value="5e6d79f9d8cdbe53927a0443" class="template-wrapper selectable--list  cocreate-scroll">
+          				<li class="selectable template display-flex margin-5px-all" data-template_id="stage" data-value="" data-pass_id="me1234">
+          				   
+          				      <p data-collection="module_activity" data-document_id="" name="name" data-pass_id="me1234">Stage Name</p>
+
+          				</li>
+                </ul>
+              </div>
+              
+            </div>
+            
+            <div class="flex-half padding-10px-right">
+             
+              <!-- CoCreate Select -->
+              <div class="select--field sortable floating-label" name="members" multiple placeholder="Members" data-pass_id="form-fields">
+                <input class="template-search" placeholder="Search" data-template_id="members">
+                <ul data-fetch_collection="users" data-pass_to="me1234" data-template_id="members" class="template-wrapper selectable--list  cocreate-scroll">
+          				<li class="selectable template display-flex margin-5px-all" data-template_id="members" data-pass_id="me1234">
+
+              			  <!-- Avatar with label and status only-->
+                      <div class="avatar-wrapper ">
+                				  <a class="avatar round">
+                    				<span data-collection="users" data-document_id="" name="name" class="first-letter avatar-name">B</span>
+                    				<span data-collection="users" data-document_id="" name="profile_image" class="avatar-image">
+                    				  <img src="/_static/Velazquez.jpg" onerror="this.style.display='none'"/>
+                    				</span>
+                    			</a>
+              			  </div>
+          				   
+          				    <div class="avatar-content margin-left-10px">
+          				      <p class="avatar-title" data-collection="users" data-document_id="" name="name" data-pass_id="me1234">user name</p>
+          				      <p class="avatar-subtitle" data-collection="users" data-document_id="" name="email" data-pass_id="me1234"></p>
+          				    </div>
+          				 
+          				</li>
+                </ul>
+              </div>
+              
+            </div>
+          </div>
+          
+          <div class="padding-20px-top display-flex flex-wrap-wrap">
+            <div class="flex-half padding-10px-right">
+              
+              <!-- CoCreate Select -->
+              <div class="select--field sortable floating-label" name="labels" multiple placeholder="Labels" data-pass_id="form-fields">
+                <input class="option-search" placeholder="Search">
+                <ul class="selectable--list  cocreate-scroll">
+          				<li class="selectable display-flex margin-5px" data-value="Open">Open</li>
+          				<li class="selectable display-flex margin-5px" data-value="Closed">Closed</li>
+                </ul>
+              </div>
+              
+            </div>
+            
+            <div class="flex-half padding-10px-right">
+              <!-- CoCreate Select -->
+              <div class="select--field sortable floating-label" name="status" multiple placeholder="Status" data-pass_id="form-fields">
+                
+                <input class="template-search" placeholder="Search" data-template_id="status">
+                <ul data-fetch_collection="users" data-template_id="status" data-pass_to="me1234" class="template-wrapper selectable--list cocreate-scroll">
+          				<li class="selectable template display-flex margin-5px-all" data-template_id="status" data-pass_id="me1234">
+
+              			  <!-- Avatar with label and status only-->
+                      <div class="avatar-wrapper ">
+                				  <a class="avatar round">
+                    				<span data-collection="users" data-document_id="" name="name" class="first-letter avatar-name">B</span>
+                    				<span data-collection="users" data-document_id="" name="profile_image" class="avatar-image">
+                    				  <img src="/_static/Velazquez.jpg" onerror="this.style.display='none'"/>
+                    				</span>
+                    			</a>
+              			  </div>
+          				   
+          				    <div class="avatar-content margin-left-10px">
+          				      <p class="avatar-title" data-collection="users" data-document_id="" name="name" data-pass_id="me1234">user name</p>
+          				      <p class="avatar-subtitle" data-collection="users" data-document_id="" name="email" data-pass_id="me1234"></p>
+          				    </div>
+          				 
+          				</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    
+    <!-- Tasklist Component -->      
+    <div id="saveFetch1" class="saveFetch" name='tasklists' data-pass_id="form-fields">
+
+        <div class="Sortable display-flex align-items-flex-start flex-wrap-wrap" data-group_name="tasklist" >
+            <!-- sortable card -->
+            <div id="tasklist" class="card template">
+              <div class="margin-15px-all font-size-18px text-dark-gray">
+                <span class="display-inline-block">
+                  <input data-collection="module_activity" data-pass_id="form-fields" data-document_id="" name="clone-name" id="stage-name" class="input_field" placeholder="Tasklist">
+                </span>
+                <span class="float-right display-inline-block"><a data-clone_id="tasklist" class="deleteBtn"><i class="fas fa-times"></i></a></span>
+              </div>
+                <div class="border-bottom border-color-extra-medium-gray">
+                <div class="display-flex align-items-center padding-15px-lr">
+                  <div class="padding-15px-right">2 / 3</div>
+                  <div class="progressbar">
+                    <div style="transform:translateX(-30%);"></div>
+                  </div>
+                </div>
+                <div class="Sortable" data-group_name="task-items">
+                  <!-- sortable task item -->
+                    <div id="task-item" class="display-flex flex-wrap-nowrap align-items-center margin-15px-lr padding-10px-tb template">
+                      <label class="checkbox">
+            	          <input type="checkbox" name="taskcheck"><span class="mark display-inline-block"></span>
+            	        </label>
+                      <div class="flex-grow-1">
+                        <input class="floating-label" data-document_id="5d8c79e7e4be424681b5e48d" name="taskname"  placeholder="Task Name">
+                      </div>
+                      <a data-clone_id="task-item" class="margin-15px-left font-size-20px deleteBtn"><i class="far fa-trash-alt"></i></a>
+                    </div>
+                </div>
+                </div>
+              <div class="margin-15px-lr padding-15px-tb">
+                <a data-clone_id="task-item" class="cloneBtn noDrag" style="display: block"><i class="fas fa-plus"></i> Add Task</a>  
+              </div>
+            </div>
+
+        </div><!-- Sortable Tasklist -->
+         	
+    </div><!-- saveFetch -->
+
+          <div style=width="100%" class="noDrag">
+            <input id="tasklist-name"><a data-clone_id="tasklist" class="cloneBtn noDrag" style="display: block" data-clone_name="tasklist-name">New Tasklist</a>  
+          </div>
+          
+          <!--<div class="display-flex align-items-center padding-20px-top">-->
+          <!--  <div class='avatar padding-20px-right margin-10px-top'></div>-->
+          <!--  <div class="flex-1-1">-->
+          <!--    <input data-document_id="5e07c2a43145e2497e494bf0" type="text" name="name" class="floating-label" placeholder="Comment">-->
+          <!--  </div>-->
+          <!--</div>-->
+          <!--<div class="padding-20px-top">-->
+          <!--  <div class="display-flex align-items-center font-bold">-->
+          <!--    <i class="fas fa-list"></i><label class="padding-10px-left">Activity</label>-->
+          <!--  </div>-->
+
+          <!--  <div class="display-flex align-items-center padding-10px-top">-->
+          <!--    <div class='avatar padding-20px-right'></div>-->
+          <!--    <div class="comment-content">-->
+          <!--      <div>John Doe <small class="margin-left-10px text-grey">2019-12-29</small></div> -->
+          <!--      <div>John Doe. Test Test Test</div> -->
+          <!--    </div>-->
+          <!--  </div>-->
+            
+          <!--  <div class="display-flex align-items-center padding-10px-top">-->
+          <!--    <div class='avatar padding-20px-right'></div>-->
+          <!--    <div class="comment-content">-->
+          <!--      <div>John Doe <small class="margin-left-10px text-grey">2019-12-29</small></div> -->
+          <!--      <div>Currently we have two new designs ready to ship.</div> -->
+          <!--    </div>-->
+          <!--  </div>-->
+            
+          <!--  <div class="display-flex align-items-center padding-10px-top">-->
+          <!--    <div class='avatar padding-20px-right'></div>-->
+          <!--    <div class="comment-content">-->
+          <!--      <div>John Doe <small class="margin-left-10px text-grey">2019-12-29</small></div> -->
+          <!--      <div>We need to fix the console asap!</div> -->
+          <!--    </div>-->
+          <!--  </div>-->
+          <!--</div>-->
+
+        	<a class="submitBtn position-fixed bottom-15px right-15px bg-blue grow-hover round"><i class="far fa-save"></i></a>
+
+        </form>
+    </div>
+</body>
+  <script>
+    var config = {
+      apiKey: 'c2b08663-06e3-440c-ef6f-13978b42883a',
+      securityKey: 'f26baf68-e3a9-45fc-effe-502e47116265',
+      organization_Id: '5de0387b12e200ea63204d6c'
+    }
+    
+  </script>
+
+
+  <script src="https://server.cocreate.app/js/CoCreate.min.js"></script>
+
+  <!--<script src="https://server.cocreate.app/js/socket.io.js"></script>-->
+  <!--<script src="https://server.cocreate.app/js/CoCreate-logic.js"></script>-->
+  <!--<script src="https://server.cocreate.app/js/CoCreate-link.js"></script>-->
+  <!--<script src="https://server.cocreate.app/js/CoCreate-utils.js"></script>-->
+  <!--<script src="https://server.cocreate.app/js/CoCreate.js"></script>-->
+  <!--<script src="https://server.cocreate.app/js/CoCreate-document_id.js"></script>-->
+  <!--<script src="https://server.cocreate.app/js/CoCreate-filter.js"></script> -->
+  <!--<script src="https://server.cocreate.app/js/CoCreate-templating.js"></script>-->
+  
+  <!--<script src="https://server.cocreate.app/js/CoCreate-htmltags.js"></script>-->
+  <!--<script src="https://server.cocreate.app/js/CoCreate-input.js"></script>-->
+  <!--<script src="https://server.cocreate.app/js/CoCreate-sort.js"></script>-->
+  <!--<script src="https://server.cocreate.app/CoCreate-yjs/y-client/dist/CoCreate-y.js"></script>-->
+  <!--<script src="https://server.cocreate.app/js/CoCreate-collaboration.js"></script>-->
+  <!--<script src="https://server.cocreate.app/js/CoCreate-text.js"></script>-->
+
+  <script src="https://server.cocreate.app/js/CoCreateUI.min.js"></script>
+  <script src="https://server.cocreate.app/CoCreate-plugins/CoCreate-modal/src/CoCreate-modal.js"></script>
+  
+  <script src="https://server.cocreate.app/js/CoCreate-select.js"></script>
+  <script type="text/javascript" src="https://server.cocreate.app/CoCreate-yjs/quill/dist/CoCreate-quill.js" async></script>
+  <script type="text/javascript" src="https://server.cocreate.app/CoCreate-yjs/codemirror/dist/CoCreate-codemirror.js" async></script>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://cdn.cocreate.app/favicon.ico" type="image/ico" sizes="16x16">
+    <title>Kanban | CoCreate</title>
+  
+    <!-- CoCreate UI -->
+    <!--<link rel="stylesheet" href="https://cdn.cocreate.app/CoCreate.min.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://server.cocreate.app/css/CoCreate.min.css" type="text/css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" crossorigin="anonymous" />    
+  </head>
+
+  <body>
+    <div id="modal-viewport" class="hidden"></div>
+    <div data-main_content_id="content" class="nav display-flex align-items-center bg-light-gray" data-scroll_effect="hide-nav" data-scroll_position="50">
+      <!--<a href="#" class="logo">Navbar</a>-->
+      <!--<a class="nav-toggle menu_icon--Vdots" data-toggle_sidenav="menuL">-->
+      <!--  <div class="circle"></div>-->
+      <!--  <div class="circle"></div>-->
+      <!--  <div class="circle"></div>-->
+      <!--  <div class="circle"></div>-->
+      <!--  <div class="circle"></div>-->
+      <!--</a>-->
+      <ul class="cocreate-scroll display-inline-flex direction-rtl font-size-20px align-items-center list-style-type-none width-100-percent">
+  			<li class="margin-right-15px">
+  			  <a class="btn-modal-close"><i class="fas fa-times"></i></a>
+  			</li>
+  			<li class="margin-right-15px">
+  			  <a class="btn-modal-maximize"><i data-transform_to="far fa-window-restore" class="far fa-window-maximize"></i></a>
+  			</li>
+  			<li class="margin-right-15px">
+  			  <a class="btn-modal-minimize"><i class="far fa-window-minimize"></i></a>
+  			</li>
+  			<li class="margin-right-15px">
+  			  <a class="fs-toggle"><i data-transform_to="fas fa-compress" class="fas fa-expand"></i></a>
+  			</li>
+  			<li class="margin-right-15px">
+  			  <a data-collection="modules" data-module_id="" data-pass_id="form-fields" class="delete-document btn-modal-close"><i class="far fa-trash-alt"></i></a>
+  			</li>
+      </ul>
+    </div>
+		<div class="cocreate-container" data-main_content_id="content">
+    
+      <div id="board" class="display-flex cocreate-scroll height-100vh-minus-70px flex-wrap-nowrap flex-dirction-row" name='board' data-collection="module_activity" data-document_id="" data-pass_id="me1234">
+        
+        <div class="template-wrapper display-flex flex-wrap sortable" data-group_name="stage"
+          data-fetch_collection="module_activity"
+          data-pass_to="stage" 
+          data-pass_id="fetch_value" 
+          data-fetch_name="module_id" 
+          data-fetch_value="5e6d79f9d8cdbe53927a0443" 
+          data-fetch_count=""
+          data-order_by="stage_psition"
+          data-order_type="asc"
+          data-template_id="filter_test"
+          data-search_type="or">
+          
+          <!-- Stage Column -->
+          <div class="max-width-300px margin-10px-lr margin-10px-tb bg-light-gray template" data-template_id="filter_test"  id="stage">
+            <div class="margin-15px font-size-18px color-dark-gray">
+                <span class="display-inline-block">
+                  <input data-collection="module_activity" data-pass_id="stage" data-document_id="" name="name" id="stage-name" class="input_field" placeholder="Stage">
+                </span>
+                <span class="float-right display-inline-block"><a data-clone_id="stage" class="deleteBtn"><i class="fas fa-times"></i></a></span>
+            </div>
+            <div class="cocreate-scroll height-percent-120px padding-10px">
+            
+              <div class="template-wrapper display-flex flex-wrap flex-dirction-column width-100-percent height-100-percent sortable" data-group_name="cards"
+                  data-fetch_collection="module_activity"
+                  data-pass_to="me1234"
+                  data-pass_id="stage"
+                  data-fetch_name="stage" 
+                  data-fetch_value="" 
+                  data-fetch_count=""
+                  data-template_id=""
+                  data-order_by="stage-index_position"
+                  data-order_type="asc">
+
+                <!-- Card -->
+                  <div class="card margin-10px-bottom template padding-10px" data-pass_id="stage" id="card">
+                    <div class="cardImage">
+                      <img data-collection="module_activity" data-document_id="" name="image" data-pass_id="me1234" src="https://via.placeholder.com/150"></img>
+                    </div>
+                    <div class="border-bottom border-color-extra-medium-gray margin-15px-lr">
+                      <div class="display-flex margin-10px-tb">
+                        <span class="cocreate-badge round badge-danger margin-right-10px font-size-10px padding-20px-lr"></span>
+                        <span class="cocreate-badge round margin-right-10px font-size-10px padding-20px-lr"></span>
+                      </div>
+                      <p data-collection="module_activity" data-document_id="" name="name" data-pass_id="me1234">Card Name</p>
+                      <div class="display-flex margin-10px-tb">
+                        <span class="cocreate-badge badge-danger margin-right-10px font-size-14px">
+                            <i class="far fa-clock"></i>
+                            <span>Aug 29th 17</span>
+                        </span>
+                        <span class="cocreate-badge margin-right-10px font-size-14px">
+                            <i class="far fa-check-circle"></i>
+                            <span>2/7</span>
+                        </span>
+                      </div>
+                      <div class="display-flex">
+              			 
+                			 <!-- Avatar -->
+                      <div class="avatar-wrapper margin-5px-tb margin-right-10px">
+              				  <a class="avatar round" data-window_url="render.html" data-pass_collection="modules" data-pass_prefix="" data-pass_module_id="5dd010bccbc25f0cdb1a4d9f" data-pass_to="render" data-window_width="300px" data-window_height="375px" data-window_color="#229954">
+                  				<span data-collection="users" data-module_id="" name="name" class="sessionUser_Id first-letter avatar-name">B</span>
+                  				<span data-collection="users" data-module_id="" name="profile_image" class="sessionUser_Id avatar-image">
+                  				  <img src="/_static/Velazquez.jpg" onerror="this.style.display='none'"/>
+                  				</span>
+                  			</a>
+                          <div class="avatar-status off"></div>
+                      </div>
+                  
+                      <!-- Avatar -->
+                      <div class="avatar-wrapper margin-5px-tb margin-right-10px">
+              				  <a class="avatar round" data-window_url="render.html" data-pass_collection="modules" data-pass_prefix="" data-pass_module_id="5dd010bccbc25f0cdb1a4d9f" data-pass_to="render" data-window_width="300px" data-window_height="375px" data-window_color="#229954">
+                  				<span data-collection="users" data-module_id="" name="name" class="sessionUser_Id first-letter avatar-name">B</span>
+                  				<span data-collection="users" data-module_id="" name="profile_image" class="sessionUser_Id avatar-image">
+                  				  <img src="/_static/Velazquez.jpg" onerror="this.style.display='none'"/>
+                  				</span>
+                  			</a>
+                          <div class="avatar-status off"></div>
+                      </div>
+                  
+                    </div>
+                  </div>
+                  <div class="display-flex margin-15px">
+                    <span class="float-left"><i class="fas fa-eye"></i></span>
+                    <div class="display-flex float-right">
+                        <span class="margin-left-10px"><i class="far fa-sticky-note"></i><span>0</span></span>
+                        <span class="margin-left-10px"><i class="far fa-envelope"></i><span>8</span></span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="margin-15px-lr padding-15px-tb">
+              <a data-clone_id="card" class="cloneBtn" data-clone_name="card-name"><i class="fas fa-plus"></i> New Card</a>
+            </div>
+          </div>
+  
+     		</div>
+     	</div>
+     	
+     	<button data-clone_id="stage" class="position-fixed bottom-15px right-15px bg-blue grow-hover round cloneBtn">
+     	  <i class="fas fa-plus"></i>
+     	</button>
+  
+   	</div>
+  
+    <script>
+      var config = {
+        apiKey: 'c2b08663-06e3-440c-ef6f-13978b42883a',
+        securityKey: 'f26baf68-e3a9-45fc-effe-502e47116265',
+        organization_Id: '5de0387b12e200ea63204d6c'
+      }
+    </script>
+  
+    <!--CoCreateJS-->
+    <!--<script src="https://cdn.cocreate.app/CoCreate.min.js"></script>-->
+  
+    <script src="https://server.cocreate.app/js/CoCreate.min.js"></script>
+    <!--<script src="https://server.cocreate.app/CoCreateJS/src/CoCreate-socket.js"></script>-->
+    <!--<script src="https://server.cocreate.app/CoCreate-components/CoCreate-logic/CoCreate-logic.js"></script>-->
+    <!--<script src="https://server.cocreate.app/CoCreateJS/src/CoCreate-utils.js"></script>-->
+    <!--<script src="https://server.cocreate.app/CoCreateJS/src/CoCreate.js"></script>-->
+  
+    <!--<script src="https://server.cocreate.app/CoCreate-components/CoCreate-y/y-client/dist/CoCreate-crdt.js"></script>-->
+  
+    <!--<script src="https://server.cocreate.app/CoCreate-components/CoCreate-document_id/CoCreate-document_id.js"></script>-->
+    <!--<script src="https://server.cocreate.app/CoCreate-components/CoCreate-form/CoCreate-form.js"></script>-->
+    <!--<script src="https://server.cocreate.app/CoCreate-components/CoCreate-filter/CoCreate-filter.js"></script> -->
+    <!--<script src="https://server.cocreate.app/CoCreate-components/CoCreate-templating/CoCreate-templating.js"></script>-->
+    
+    <!--<script src="https://server.cocreate.app/CoCreate-components/CoCreate-savefetch/CoCreate-savefetch.js"></script>-->
+    <!--<script src="https://server.cocreate.app/CoCreate-components/CoCreate-clone/CoCreate-clone.js"></script>-->
+    <!--<script src="https://server.cocreate.app/CoCreate-components/CoCreate-dom/CoCreate-dom.js"></script>-->
+    
+    <!--<script src="https://server.cocreate.app/CoCreate-components/CoCreate-htmltags/CoCreate-htmltags.js"></script>-->
+    <!--<script src="https://server.cocreate.app/CoCreate-components/CoCreate-input/CoCreate-input.js"></script>-->
+  
+    <!--<script src="https://server.cocreate.app/CoCreate-components/CoCreate-cursors/CoCreate-cursors.js"></script>-->
+    <!--<script src="https://server.cocreate.app/CoCreate-components/CoCreate-text/CoCreate-text.js"></script>-->
+  
+    <!--<script src="https://server.cocreate.app/CoCreate-components/CoCreate-init/CoCreate-init.js"></script>-->
+  
+    <script src="https://cdn.cocreate.app/CoCreateUI.min.js"></script>
+    <script src="https://server.cocreate.app/CoCreate-components/CoCreate-select/src/CoCreate-select.js"></script>
+  
+  </body>
+</html>
