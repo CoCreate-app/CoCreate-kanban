@@ -17,95 +17,103 @@
 
   <body>
     <div id="modal-viewport" class="hidden"></div>
-    <div data-main_content_id="content" class="nav display-flex align-items-center bg-light-gray" data-scroll_effect="hide-nav" data-scroll_position="50">
-      <!--<a href="#" class="logo">Navbar</a>-->
-      <!--<a class="nav-toggle menu_icon--Vdots" data-toggle_sidenav="menuL">-->
-      <!--  <div class="circle"></div>-->
-      <!--  <div class="circle"></div>-->
-      <!--  <div class="circle"></div>-->
-      <!--  <div class="circle"></div>-->
-      <!--  <div class="circle"></div>-->
-      <!--</a>-->
-      <ul class="cocreate-scroll display-inline-flex direction-rtl font-size-20px align-items-center list-style-type-none width-100-percent">
-  			<li class="margin-right-15px">
+    <div class="nav display:flex align-items:center bg:light-gray" 
+      data-main_content_id="content"
+      data-scroll_effect="hide-nav"
+      data-scroll_up="1" 
+      data-scroll_down="1">
+
+      <!-- Horizontal Scroll Nav/Tabs -->
+      <ul class="cocreate-scroll display:inline-flex direction:rtl font-size:20px align-items:center list-style-type:none width:100% height:50px">
+  			
+  			<!-- Modal Controls -->
+  			<li class="margin-right:15px">
   			  <a class="btn-modal-close"><i class="fas fa-times"></i></a>
   			</li>
-  			<li class="margin-right-15px">
-  			  <a class="btn-modal-maximize"><i data-transform_to="far fa-window-restore" class="far fa-window-maximize"></i></a>
+  			<li class="margin-right:15px"><a class="btn-modal-maximize"><i data-transform_to="far fa-window-restore" class="far fa-window-maximize">
+  			  </i></a>
   			</li>
-  			<li class="margin-right-15px">
-  			  <a class="btn-modal-minimize"><i class="far fa-window-minimize"></i></a>
+  			<li class="margin-right:15px"><a class="btn-modal-minimize"><i class="far fa-window-minimize">
+  			  </i></a>
   			</li>
-  			<li class="margin-right-15px">
+  			
+  			<!-- fullscreen toogle and icon transform-->
+  			<li class="margin-right:15px">
   			  <a class="fs-toggle"><i data-transform_to="fas fa-compress" class="fas fa-expand"></i></a>
   			</li>
-  			<li class="margin-right-15px">
+  		
+  			<!-- delete document-->
+  			<li class="margin-right:15px">
   			  <a data-collection="modules" data-module_id="" data-pass_id="form-fields" class="delete-document btn-modal-close"><i class="far fa-trash-alt"></i></a>
   			</li>
       </ul>
     </div>
-		<div class="cocreate-container" data-main_content_id="content">
+		<div data-main_content_id="content">
     
-      <div id="board" class="display-flex cocreate-scroll height-100vh-minus-70px flex-wrap-nowrap flex-dirction-row" name='board' data-collection="module_activity" data-document_id="" data-pass_id="me1234">
+      <div id="board" class="display:flex cocreate-scroll height:90vh flex-wrap:nowrap flex-dirction:row" 
+        data-collection="module_activity" 
+        data-document_id="" 
+        name='board' 
+        data-pass_id="me1234">
         
-        <div class="template-wrapper display-flex flex-wrap sortable" data-group_name="stage"
+        <div class="display:flex flex-wrap:wrap sortable1" data-group_name="stage"
           data-fetch_collection="module_activity"
-          data-pass_to="stage" 
-          data-pass_id="fetch_value" 
           data-fetch_name="module_id" 
           data-fetch_value="5e6d79f9d8cdbe53927a0443" 
           data-fetch_count=""
-          data-order_by="stage_psition"
+          data-fetch_operator="or"
+          data-order_by="stage_position"
           data-order_type="asc"
           data-template_id="filter_test"
-          data-search_type="or">
-          
+          data-pass_to="stage" 
+          data-pass_id="fetch_value">
+           
           <!-- Stage Column -->
-          <div class="max-width-300px margin-10px-lr margin-10px-tb bg-light-gray template" data-template_id="filter_test"  id="stage">
-            <div class="margin-15px font-size-18px color-dark-gray">
-                <span class="display-inline-block">
+          <div class="max-width:300px margin:10px bg:light-gray template" data-template_id="filter_test"  id="stage">
+            <div class="margin:15px font-size:18px color-dark-gray">
+                <span class="display:inline-block">
                   <input data-collection="module_activity" data-pass_id="stage" data-document_id="" name="name" id="stage-name" class="input_field" placeholder="Stage">
                 </span>
-                <span class="float-right display-inline-block"><a data-clone_id="stage" class="deleteBtn"><i class="fas fa-times"></i></a></span>
+                <span class="float:right display:inline-block"><a data-clone_id="stage" class="deleteBtn"><i class="fas fa-times"></i></a></span>
             </div>
-            <div class="cocreate-scroll height-percent-120px padding-10px">
+            <div class="cocreate-scroll height:percent-120px padding:10px">
             
-              <div class="template-wrapper display-flex flex-wrap flex-dirction-column width-100-percent height-100-percent sortable" data-group_name="cards"
+              <div class="display:flex flex-wrap:wrap flex-dirction:column width:100% height:100% sortable1" data-group_name="cards"
                   data-fetch_collection="module_activity"
-                  data-pass_to="me1234"
-                  data-pass_id="stage"
                   data-fetch_name="stage" 
                   data-fetch_value="" 
                   data-fetch_count=""
-                  data-template_id=""
                   data-order_by="stage-index_position"
-                  data-order_type="asc">
+                  data-order_type="asc"
+                  data-template_id=""
+                  data-pass_to="me1234"
+                  data-pass_id="stage">
 
                 <!-- Card -->
-                  <div class="card margin-10px-bottom template padding-10px" data-pass_id="stage" id="card">
+                  <div class="card margin-bottom:10px template padding:10px" data-pass_id="stage" id="card">
                     <div class="cardImage">
                       <img data-collection="module_activity" data-document_id="" name="image" data-pass_id="me1234" src="https://via.placeholder.com/150"></img>
                     </div>
-                    <div class="border-bottom border-color-extra-medium-gray margin-15px-lr">
-                      <div class="display-flex margin-10px-tb">
-                        <span class="cocreate-badge round badge-danger margin-right-10px font-size-10px padding-20px-lr"></span>
-                        <span class="cocreate-badge round margin-right-10px font-size-10px padding-20px-lr"></span>
+                    <div class="border-bottom:1px_solid_gray margin:0px_15px">
+                      <div class="display:flex margin:10px_0px">
+                        <span class="cocreate-badge round badge-danger margin-right:10px font-size:10px padding:0px_20px"></span>
+                        <span class="cocreate-badge round margin-right:10px font-size:10px padding:0px_20px"></span>
                       </div>
                       <p data-collection="module_activity" data-document_id="" name="name" data-pass_id="me1234">Card Name</p>
-                      <div class="display-flex margin-10px-tb">
-                        <span class="cocreate-badge badge-danger margin-right-10px font-size-14px">
+                      <div class="display:flex margin:10px_0px">
+                        <span class="cocreate-badge badge-danger margin-right:10px font-size:14px">
                             <i class="far fa-clock"></i>
                             <span>Aug 29th 17</span>
                         </span>
-                        <span class="cocreate-badge margin-right-10px font-size-14px">
+                        <span class="cocreate-badge margin-right:10px font-size:14px">
                             <i class="far fa-check-circle"></i>
                             <span>2/7</span>
                         </span>
                       </div>
-                      <div class="display-flex">
+                      <div class="display:flex">
               			 
                 			 <!-- Avatar -->
-                      <div class="avatar-wrapper margin-5px-tb margin-right-10px">
+                      <div class="avatar-wrapper margin:5px_0px margin-right:10px">
               				  <a class="avatar round" data-window_url="render.html" data-pass_collection="modules" data-pass_prefix="" data-pass_module_id="5dd010bccbc25f0cdb1a4d9f" data-pass_to="render" data-window_width="300px" data-window_height="375px" data-window_color="#229954">
                   				<span data-collection="users" data-module_id="" name="name" class="sessionUser_Id first-letter avatar-name">B</span>
                   				<span data-collection="users" data-module_id="" name="profile_image" class="sessionUser_Id avatar-image">
@@ -116,7 +124,7 @@
                       </div>
                   
                       <!-- Avatar -->
-                      <div class="avatar-wrapper margin-5px-tb margin-right-10px">
+                      <div class="avatar-wrapper margin:5px_0px margin-right:10px">
               				  <a class="avatar round" data-window_url="render.html" data-pass_collection="modules" data-pass_prefix="" data-pass_module_id="5dd010bccbc25f0cdb1a4d9f" data-pass_to="render" data-window_width="300px" data-window_height="375px" data-window_color="#229954">
                   				<span data-collection="users" data-module_id="" name="name" class="sessionUser_Id first-letter avatar-name">B</span>
                   				<span data-collection="users" data-module_id="" name="profile_image" class="sessionUser_Id avatar-image">
@@ -128,18 +136,18 @@
                   
                     </div>
                   </div>
-                  <div class="display-flex margin-15px">
-                    <span class="float-left"><i class="fas fa-eye"></i></span>
-                    <div class="display-flex float-right">
-                        <span class="margin-left-10px"><i class="far fa-sticky-note"></i><span>0</span></span>
-                        <span class="margin-left-10px"><i class="far fa-envelope"></i><span>8</span></span>
+                  <div class="display:flex margin:15px">
+                    <span class="float:left"><i class="fas fa-eye"></i></span>
+                    <div class="display:flex float:right">
+                        <span class="margin-left:10px"><i class="far fa-sticky-note"></i><span>0</span></span>
+                        <span class="margin-left:10px"><i class="far fa-envelope"></i><span>8</span></span>
                     </div>
                   </div>
                   
                 </div>
               </div>
             </div>
-            <div class="margin-15px-lr padding-15px-tb">
+            <div class="margin:0px_15px padding:15px_0px">
               <a data-clone_id="card" class="cloneBtn" data-clone_name="card-name"><i class="fas fa-plus"></i> New Card</a>
             </div>
           </div>
@@ -147,7 +155,7 @@
      		</div>
      	</div>
      	
-     	<button data-clone_id="stage" class="position-fixed bottom-15px right-15px bg-blue grow-hover round cloneBtn">
+     	<button data-clone_id="stage" class="position:fixed bottom:15px right:15px bg:blue grow-hover round cloneBtn">
      	  <i class="fas fa-plus"></i>
      	</button>
   
@@ -162,9 +170,29 @@
     </script>
   
     <!--CoCreateJS-->
-    <!--<script src="https://cdn.cocreate.app/CoCreate.min.js"></script>-->
+    <!--<script src="https://server.cocreate.app/js/CoCreate.min.js"></script>-->
   
     <script src="https://server.cocreate.app/js/CoCreate.min.js"></script>
+    <script defer src="https://server.cocreate.app/CoCreate-components/CoCreate-domEditor/src/domEditor.js"></script>
+    <script defer src="https://server.cocreate.app/CoCreate-components/CoCreate-dnd/dist/dnd.js"></script>
+    <script>
+      window.addEventListener('load', () => {
+        dom.element(
+          dom.element([{
+            selector: ['.sortable1'],
+            droppable: 'true',
+            idGenerator: () => UUID(12),
+          },
+          {
+            selector: ['.sortable1> *'],
+            draggable: 'true',
+            idGenerator: () => UUID(12),
+          }])
+        )
+      })
+        
+
+    </script>
     <!--<script src="https://server.cocreate.app/CoCreateJS/src/CoCreate-socket.js"></script>-->
     <!--<script src="https://server.cocreate.app/CoCreate-components/CoCreate-logic/CoCreate-logic.js"></script>-->
     <!--<script src="https://server.cocreate.app/CoCreateJS/src/CoCreate-utils.js"></script>-->
@@ -188,9 +216,6 @@
     <!--<script src="https://server.cocreate.app/CoCreate-components/CoCreate-text/CoCreate-text.js"></script>-->
   
     <!--<script src="https://server.cocreate.app/CoCreate-components/CoCreate-init/CoCreate-init.js"></script>-->
-  
-    <script src="https://cdn.cocreate.app/CoCreateUI.min.js"></script>
-    <script src="https://server.cocreate.app/CoCreate-components/CoCreate-select/src/CoCreate-select.js"></script>
   
   </body>
 </html>

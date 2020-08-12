@@ -27,7 +27,7 @@
 <body>
     <!-- Navbar -->
     <!--<div id="modal-viewport" class="hidden"></div>-->
-    <div data-main_content_id="content" class="nav width-100-percernt display-flex align-items-center bg-light-gray" data-scroll_effect="hide-nav" data-scroll_position="50">
+    <div data-main_content_id="content" class="nav width:100% display:flex align-items:center bg:light-gray" data-scroll_effect="hide-nav" data-scroll_position="50">
 
       <!-- Menu Icon Animations -->
       <!--<a class="nav-toggle menu_icon--Vdots" data-toggle_sidenav="menuL">-->
@@ -38,23 +38,23 @@
       <!--  <div class="circle"></div>-->
       <!--</a>-->
         
-        <ul class="cocreate-scroll display-inline-flex direction-rtl font-size-20px align-items-center list-style-type-none">
+        <ul class="cocreate-scroll display:inline-flex direction:rtl font-size:20px align-items:center list-style-type:none">
 
     			
     			<!-- Window Controls -->
-    			<li class="margin-right-15px"><a class="btn-modal-close"><i class="fas fa-times">
+    			<li class="margin-right:15px"><a class="btn-modal-close"><i class="fas fa-times">
     			  </i></a></li>
-    			<li class="margin-right-15px"><a class="btn-modal-maximize"><i data-transform_to="far fa-window-restore" class="far fa-window-maximize">
+    			<li class="margin-right:15px"><a class="btn-modal-maximize"><i data-transform_to="far fa-window-restore" class="far fa-window-maximize">
     			  </i></a></li>
-    			<li class="margin-right-15px"><a class="btn-modal-minimize"><i class="far fa-window-minimize">
+    			<li class="margin-right:15px"><a class="btn-modal-minimize"><i class="far fa-window-minimize">
     			  </i></a></li>
     			
     			<!-- fullscreen toogle and icon transform-->
-    			<li class="margin-right-15px"><a class="fs-toggle"><i data-transform_to="fas fa-compress" class="fas fa-expand">
+    			<li class="margin-right:15px"><a class="fs-toggle"><i data-transform_to="fas fa-compress" class="fas fa-expand">
     			  </i></a></li>
     			
     			<!-- Render Builder -->
-    			<li class="margin-right-15px">
+    			<li class="margin-right:15px">
 			    <a data-modal_url="render.html"
 	              	 data-pass_collection="modules"
 	              	 data-pass_document_id="" 
@@ -73,7 +73,7 @@
           </li>
           
           <!-- Render item Form -->
-    			<li class="margin-right-15px">
+    			<li class="margin-right:15px">
 					<a data-modal_url="render.html" 
 					   data-pass_collection="module_activity"
 					   data-pass_document_id=""
@@ -97,27 +97,27 @@
 		        </li>
     			
     			<!-- Datatable Controls -->  
-    			<li class="margin-right-15px">
+    			<li class="margin-right:15px">
     			  <a data-btn_type="column-visibility" data-table_id="example1" class="btn-table"><i class="far fa-eye"></i></a>
           </li>
-    			<li class="margin-right-15px"><a data-btn_type="pdf" data-table_id="example1" class="btn-table"><i class="far fa-file-pdf">
+    			<li class="margin-right:15px"><a data-btn_type="pdf" data-table_id="example1" class="btn-table"><i class="far fa-file-pdf">
     			  </i></a></li>
-    			<li class="margin-right-15px"><a data-btn_type="excel" data-table_id="example1" class="btn-table"><i class="far fa-file-excel">
+    			<li class="margin-right:15px"><a data-btn_type="excel" data-table_id="example1" class="btn-table"><i class="far fa-file-excel">
     			  </i></a></li>
-    			<li class="margin-right-15px"><a data-btn_type="csv" data-table_id="example1" class="btn-table"><i class="fas fa-file-csv">
+    			<li class="margin-right:15px"><a data-btn_type="csv" data-table_id="example1" class="btn-table"><i class="fas fa-file-csv">
     			  </i></a></li>
-    			<li class="margin-right-15px"><a data-btn_type="column-visibility" data-table_id="example1" class="btn-table"><i class="fas fa-file-pdf">
+    			<li class="margin-right:15px"><a data-btn_type="column-visibility" data-table_id="example1" class="btn-table"><i class="fas fa-file-pdf">
     			  </i></a></li>
-    			<li class="margin-right-15px"><a data-btn_type="copy" data-table_id="example1" class="btn-table"><i class="far fa-copy">
+    			<li class="margin-right:15px"><a data-btn_type="copy" data-table_id="example1" class="btn-table"><i class="far fa-copy">
     			  </i></a></li>
-    			<li class="margin-right-15px"><a data-btn_type="print" data-table_id="example1" class="btn-table"><i class="fas fa-print">
+    			<li class="margin-right:15px"><a data-btn_type="print" data-table_id="example1" class="btn-table"><i class="fas fa-print">
     			  </i></a></li>
 				 </ul>
       </div>
       
       <!-- Main Content with Viewport/Boundaries for windows -->  
       <!--<div data-table_id="example1" data-filter_name="menu-position" data-filter_value="0" data-filter_operator="gt" data-value_type="number"></div>-->
-		  <div class="cocreate-container" id="modal-viewport" data-main_content_id="content">
+		  <div id="modal-viewport" data-main_content_id="content">
   			  <div class="btn-group">
     				<ul data-table_id="example1" class="colvis-menu cocreate-dt-menu"></ul>
 			    </div>
@@ -139,14 +139,14 @@
 				         	  data-value_type="string"
 				         	  data-filter_operator=""
                  			  data-table_id="example1" 
-				         	  placeholder="Stage Name" class="width-100-percent"></th>
+				         	  placeholder="Stage Name" class="width:100%"></th>
       					<th>
 							<input type="text" class="floating-label"
 				         	  data-filter_name="_id" 
 				         	  data-value_type="string"
 				         	  data-filter_operator=""
                  			  data-table_id="example1" 
-				         	  placeholder="Document id" class="width-100-percent">
+				         	  placeholder="Document id" class="width:100%">
 				         </th>
     				  </tr>
     			 	</thead>
@@ -225,7 +225,7 @@
 		     data-modal_header="false"
 		     data-modal_x=""
 		     data-modal_y=""
-		     class="position-fixed bottom-15px right-15px bg-blue grow-hover round">
+		     class="position:fixed bottom:15px right:15px bg:blue grow-hover round">
 		    <i class="fas fa-plus"></i>
 			    <div data-pass_collection="modules"
 				   data-pass_document_id="5e6d79f9d8cdbe53927a0443"
