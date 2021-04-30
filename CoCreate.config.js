@@ -10,7 +10,7 @@ module.exports = {
             "path": "./docs/index.html",
             "collection": "files",
             "document_id": "6025f32c7a78a543a77c9220",
-            "key": "html",
+            "key": "src",
             "data":{
                 "name": "kanban Doc",
                 "domains": ["cocreate.app", "server.cocreate.app", "ws.cocreate.app"],
