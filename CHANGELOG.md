@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.0.3...v1.0.4) (2021-05-08)
+
+
+### Bug Fixes
+
+* add css auto parse and save to docs. ([813dc19](https://github.com/CoCreate-app/CoCreate-kanban/commit/813dc19a9dfc9ab4a45d996b25f6c67231a236d9))
+
 ## [1.0.3](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.0.2...v1.0.3) (2021-04-27)
 
 
