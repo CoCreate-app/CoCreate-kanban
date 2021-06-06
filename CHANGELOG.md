@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.0.4...v1.0.5) (2021-06-06)
+
+
+### Bug Fixes
+
+* update packages, add uuid, add data-parse to demos ([21f4b9c](https://github.com/CoCreate-app/CoCreate-kanban/commit/21f4b9cadb42f872bc3bf01a0a932a0d9ddec06c))
+
 ## [1.0.4](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.0.3...v1.0.4) (2021-05-08)
 
 
