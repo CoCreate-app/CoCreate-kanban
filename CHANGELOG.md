@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.0.5...v1.0.6) (2021-06-16)
+
+
+### Bug Fixes
+
+* added header for seo ([eeeda68](https://github.com/CoCreate-app/CoCreate-kanban/commit/eeeda6841cc5035605436ca1cdababeb60a15dac))
+
 ## [1.0.5](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.0.4...v1.0.5) (2021-06-06)
 
 
