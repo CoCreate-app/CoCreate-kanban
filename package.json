@@ -1,6 +1,6 @@
 {
   "name": "@cocreate/kanban",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A simple kanban component in vanilla javascript. Easily configured using HTML5 data-attributes and/or JavaScript API.",
   "keywords": [
     "kanban",
@@ -20,7 +20,9 @@
     "html5-framework",
     "javascript-framework"
   ],
-  "publishConfig": { "access": "public" },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "start": "npx webpack --config webpack.config.js --watch",
     "build": "NODE_ENV=production npx webpack --config webpack.config.js",
@@ -32,7 +34,9 @@
   },
   "author": "CoCreate LLC",
   "license": "MIT",
-  "bugs": { "url": "https://github.com/CoCreate-app/CoCreate-kanban/issues" },
+  "bugs": {
+    "url": "https://github.com/CoCreate-app/CoCreate-kanban/issues"
+  },
   "homepage": "https://cocreate.app/docs/kanban",
   "devDependencies": {
     "@babel/core": "^7.12.10",
