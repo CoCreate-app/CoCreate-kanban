@@ -1,3 +1,10 @@
+## [1.0.10](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.0.9...v1.0.10) (2021-06-29)
+
+
+### Bug Fixes
+
+* add logger utility ([53c30ed](https://github.com/CoCreate-app/CoCreate-kanban/commit/53c30ed1b47df533185f547f84ffc937d816bea0))
+
 ## [1.0.9](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.0.8...v1.0.9) (2021-06-25)
 
 
