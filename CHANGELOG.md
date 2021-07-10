@@ -1,3 +1,10 @@
+## [1.0.13](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.0.12...v1.0.13) (2021-07-10)
+
+
+### Bug Fixes
+
+* gitignore all logs ([2dc9c34](https://github.com/CoCreate-app/CoCreate-kanban/commit/2dc9c34ef25765a836da5df39d9de3c4dca3bc39))
+
 ## [1.0.12](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.0.11...v1.0.12) (2021-06-30)
 
 

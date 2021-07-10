@@ -1,6 +1,6 @@
 {
   "name": "@cocreate/kanban",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "A simple kanban component in vanilla javascript. Easily configured using HTML5 data-attributes and/or JavaScript API.",
   "keywords": [
     "kanban",
@@ -35,7 +35,9 @@
   },
   "author": "CoCreate LLC",
   "license": "MIT",
-  "bugs": { "url": "https://github.com/CoCreate-app/CoCreate-kanban/issues" },
+  "bugs": {
+    "url": "https://github.com/CoCreate-app/CoCreate-kanban/issues"
+  },
   "homepage": "https://cocreate.app/docs/kanban",
   "funding": {
     "type": "GitHub Sponsors ❤",
