@@ -1,3 +1,11 @@
+## [1.0.14](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.0.13...v1.0.14) (2021-07-13)
+
+
+### Bug Fixes
+
+* add yarn lockfile to git ignore ([f51a30b](https://github.com/CoCreate-app/CoCreate-kanban/commit/f51a30bde383a03c5dd77421bb4021a8d5a07967))
+* remove yarn.lock ([ce2f13e](https://github.com/CoCreate-app/CoCreate-kanban/commit/ce2f13e14bfb462c2081eab8be663024b301d88f))
+
 ## [1.0.13](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.0.12...v1.0.13) (2021-07-10)
 
 
