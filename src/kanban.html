@@ -41,7 +41,7 @@
   		
   			<!-- delete document-->
   			<li class="margin-right:15px">
-  			  <a collection="modules" data-module_id="" data-pass_id="form-fields" class="btn-modal-close" data-actions="deleteDocument"><i class="far fa-trash-alt"></i></a>
+  			  <a collection="modules" data-module_id="" pass_id="form-fields" class="btn-modal-close" actions="deleteDocument"><i class="far fa-trash-alt"></i></a>
   			</li>
       </ul>
     </div>
@@ -50,21 +50,21 @@
       <div id="board" class="display:flex overflow:overlay height:90vh">
         
         <div class="display:flex flex-wrap:nowrap flex-direction:row sortable" data-group_name="stage"
-          data-fetch_collection="module_activity"
-          data-filter_name="module_id" 
-          data-filter_value="5e6d79f9d8cdbe53927a0443"
-          data-filter_operator="$eq"
+          fetch-collection="module_activity"
+          filter-name="module_id" 
+          filter-value="5e6d79f9d8cdbe53927a0443"
+          filter-operator="$eq"
           data-fetch_count=""
-          data-order_by="stage_position"
-          data-order_type="asc"
-          data-template_id="filter_test"
-          data-render_id="stage"
-          data-pass_id="fetch_value"
+          order-by="stage_position"
+          order-type="asc"
+          template_id="filter_test"
+          render_id="stage"
+          pass_id="fetch_value"
           data-droppable="true">
            
           <!-- Stage Column -->
           <div class="template margin:10px background:whitesmoke max-width:300px" 
-              data-template_id="filter_test" 
+              template_id="filter_test" 
               data-element_id="{{stage._id}}"
               document_id="{{stage._id}}">
             <div class="margin:15px font-size:18px color-dark-gray">
@@ -77,24 +77,24 @@
                     placeholder="Stage">
                 </span>
                 <span class="float:right display:inline-block">
-                  <a data-clone_id="stage" data-actions="deleteDocument" collection="module_activity" document_id="{{stage._id}}"><i class="fas fa-times"></i></a>
+                  <a data-clone_id="stage" actions="deleteDocument" collection="module_activity" document_id="{{stage._id}}"><i class="fas fa-times"></i></a>
                 </span>
             </div>
             <div class="height:70vh padding:10px overflow:auto">
             
               <div class="display:flex flex-direction:column height:100% sortable" 
                 data-group_name="card" 
-                data-fetch_collection="module_activity"
-                data-filter_name="stage"
-                data-filter_value="{{stage._id}}"
-                data-filter_operator="$eq"
+                fetch-collection="module_activity"
+                filter-name="stage"
+                filter-value="{{stage._id}}"
+                filter-operator="$eq"
                 data-fetch_count=""
-                data-order_by="stage-index_position"
-                data-order_type="asc"
-                data-template_id="{{stage._id}}">
+                order-by="stage-index_position"
+                order-type="asc"
+                template_id="{{stage._id}}">
 
                 <!-- Card -->
-                  <div class="template card margin-bottom:10px padding:10px background:white" data-template_id="{{stage._id}}" data-value="{{data._id}}" document_id="{{data._id}}">
+                  <div class="template card margin-bottom:10px padding:10px background:white" template_id="{{stage._id}}" data-value="{{data._id}}" document_id="{{data._id}}">
                     <div class="width:100%">
                       <img collection="module_activity" document_id="{{data._id}}" name="image" src="https://via.placeholder.com/150" width="100%"></img>
                     </div>
@@ -118,7 +118,7 @@
               			 
                 			 <!-- Avatar -->
                       <div class="avatar-wrapper margin:5px_0px margin-right:10px">
-              				  <a class="avatar round" data-window_url="render.html" data-pass_collection="modules" data-pass_prefix="" data-pass_module_id="5dd010bccbc25f0cdb1a4d9f" data-pass_to="render" data-window_width="300px" data-window_height="375px" data-window_color="#229954">
+              				  <a class="avatar round" data-window_url="render.html" pass-collection="modules" pass-prefix="" pass-module_id="5dd010bccbc25f0cdb1a4d9f" pass_to="render" data-window_width="300px" data-window_height="375px" data-window_color="#229954">
                   				<span collection="users" data-module_id="" name="name" class="sessionUser_Id first-letter avatar-name">B</span>
                   				<span collection="users" data-module_id="" name="profile_image" class="sessionUser_Id avatar-image">
                   				  <img src="/_static/Velazquez.jpg" onerror="this.style.display='none'"/>
@@ -129,7 +129,7 @@
                   
                       <!-- Avatar -->
                       <div class="avatar-wrapper margin:5px_0px margin-right:10px">
-              				  <a class="avatar round" data-window_url="render.html" data-pass_collection="modules" data-pass_prefix="" data-pass_module_id="5dd010bccbc25f0cdb1a4d9f" data-pass_to="render" data-window_width="300px" data-window_height="375px" data-window_color="#229954">
+              				  <a class="avatar round" data-window_url="render.html" pass-collection="modules" pass-prefix="" pass-module_id="5dd010bccbc25f0cdb1a4d9f" pass_to="render" data-window_width="300px" data-window_height="375px" data-window_color="#229954">
                   				<span collection="users" data-module_id="" name="name" class="sessionUser_Id first-letter avatar-name">B</span>
                   				<span collection="users" data-module_id="" name="profile_image" class="sessionUser_Id avatar-image">
                   				  <img src="/_static/Velazquez.jpg" onerror="this.style.display='none'"/>
@@ -152,10 +152,10 @@
               </div>
             </div>
             <div class="margin:0px_15px padding:15px_0px">
-              <!--<a data-clone_id="{{stage._id}}-card" data-actions="createClone" data-clone_name="card-name"><i class="fas fa-plus"></i> New Card</a>-->
+              <!--<a data-clone_id="{{stage._id}}-card" actions="createClone" data-clone_name="card-name"><i class="fas fa-plus"></i> New Card</a>-->
              	<form collection="module_activity">
                	<input type="hidden" document_id="" name="stage" value="{{stage._id}}"/>
-               	<a data-actions="createDocument"><i class="fas fa-plus"></i> New Card</a>
+               	<a actions="createDocument"><i class="fas fa-plus"></i> New Card</a>
              	</form>
             </div>
           </div>
@@ -164,8 +164,8 @@
      	</div>
      	
      	<form collection="module_activity">
-       	<input type="hidden" data-pass_id="module_id" document_id="" name="module_id" value="5e6d79f9d8cdbe53927a0443"/>
-       	<button class="position:fixed bottom:15px right:15px background:dodgerblue border-radius:50% grow-hover" data-actions="createDocument">
+       	<input type="hidden" pass_id="module_id" document_id="" name="module_id" value="5e6d79f9d8cdbe53927a0443"/>
+       	<button class="position:fixed bottom:15px right:15px background:dodgerblue border-radius:50% grow-hover" actions="createDocument">
        	  <i class="fas fa-plus"></i>
        	</button>
      	</form>
