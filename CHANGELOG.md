@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.1.0...v1.1.1) (2021-07-28)
+
+
+### Bug Fixes
+
+* remove data- from fetch, pass and filter ([5af6de5](https://github.com/CoCreate-app/CoCreate-kanban/commit/5af6de5fbdae690a67ecae4b737b953333b808b0))
+
 # [1.1.0](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.0.17...v1.1.0) (2021-07-28)
 
 
