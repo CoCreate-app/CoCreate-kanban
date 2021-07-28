@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.0.17...v1.1.0) (2021-07-28)
+
+
+### Features
+
+* add new is{attribute} system and remove data- from attributtes ([790d01c](https://github.com/CoCreate-app/CoCreate-kanban/commit/790d01c3c7fcf134c91463a0b845727ad0c8a1c7))
+
 ## [1.0.17](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.0.16...v1.0.17) (2021-07-17)
 
 
