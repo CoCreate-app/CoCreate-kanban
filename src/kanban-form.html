@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" href="https://cdn.cocreate.app/favicon.ico" type="image/ico" sizes="16x16">
 		<title>Payment Form | CoCreate</title>
-        <link rel="stylesheet" href="../index.css" data-collection="files" data-document_id="60972231624235187e4d6979" name="src" type="text/css" data-save="true" data-parse="true" />
+        <link rel="stylesheet" href="../index.css" collection="files" document_id="60972231624235187e4d6979" name="src" type="text/css" data-save="true" data-parse="true" />
 
 		<!-- Font Awesome -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" crossorigin="anonymous" />
@@ -100,7 +100,7 @@
 
 				<!-- deleteDocument-->
 				<li class="margin-right:15px">
-					<a data-actions="deleteDocument" data-collection="" data-document_id="" class="btn-modal-close">
+					<a data-actions="deleteDocument" collection="" document_id="" class="btn-modal-close">
                         <i class="far fa-trash-alt"></i>
                     </a>
 				</li>
@@ -110,7 +110,7 @@
 		<!-- Main Content -->
 		<main class="padding:10px" data-main_content_id="content">
 
-            <form data-realtime="true" data-collection="module_activity" data-pass_id="form-fields">
+            <form realtime="true" collection="module_activity" data-pass_id="form-fields">
 
                 <input type="hidden" name="module_id" data-pass_value_id="module_id" placeholder="Module Id">
 
@@ -121,11 +121,11 @@
                 <div class="padding-top:20px display:flex flex-wrap:wrap-wrap">
                     <div class="flex-grow:1 width:150px padding-right:10px">
 
-        				<cocreate-select class="sortable floating-label" name="stage" data-document_id="stage" placeholder="Stage">
+        				<cocreate-select class="sortable floating-label" name="stage" document_id="stage" placeholder="Stage">
         					<input placeholder="Search" data-template_id="stage">
         					<cc-options data-fetch_collection="module_activity" data-fetch_name="module_id" data-fetch_value="5e6d79f9d8cdbe53927a0443" data-template_id="stage" class="overflow:overlay">
         						<cc-option class="template" data-template_id="stage" value="{{data._id}}">
-        							<h3 data-collection="module_activity" data-document_id="" name="name">Stage Name</h3>
+        							<h3 collection="module_activity" document_id="" name="name">Stage Name</h3>
         						</cc-option>
         					</cc-options>
         				</cocreate-select>
@@ -142,17 +142,17 @@
                                     <!-- Avatar -->
                                     <div class="avatar-wrapper margin:5px">
                                         <a class="avatar round" target="modal" href="./users/profile.html" data-modal_width="300px" data-modal_height="375px"  data-modal_color="#229954">
-                                            <span data-collection="users" data-document_id="{{data._id}}" name="name" class="avatar-name width:1ch letter-spacing:2px overflow:hidden text-transform:uppercase"></span>
+                                            <span collection="users" document_id="{{data._id}}" name="name" class="avatar-name width:1ch letter-spacing:2px overflow:hidden text-transform:uppercase"></span>
                                             <span class="avatar-image">
-                                                <img data-collection="users" data-document_id="{{data._id}}" name="avatar" onerror="this.style.display='none'" width="40px"/>
+                                                <img collection="users" document_id="{{data._id}}" name="avatar" onerror="this.style.display='none'" width="40px"/>
                                             </span>
                                         </a>
-                                        <div class="avatar-status" data-collection="users" data-document_id="{{data._id}}" data-user_status='{"name":"status"}'></div>
+                                        <div class="avatar-status" collection="users" document_id="{{data._id}}" data-user_status='{"name":"status"}'></div>
                                     </div>
 
                                     <div class="avatar-content margin-left:10px">
-                                        <p class="avatar-title" data-collection="users" data-document_id="{{data._id}}" name="name">user name</p>
-                                        <p class="avatar-subtitle" data-collection="users" data-document_id="{{data._id}}" name="email"></p>
+                                        <p class="avatar-title" collection="users" document_id="{{data._id}}" name="name">user name</p>
+                                        <p class="avatar-subtitle" collection="users" document_id="{{data._id}}" name="email"></p>
                                     </div>
 
                                 </cc-option>
@@ -177,11 +177,11 @@
                     </div>
 
                     <div class="flex-grow:1 width:150px padding-right:10px">
-        				<cocreate-select class="sortable floating-label" name="status" data-document_id="status" placeholder="Status">
+        				<cocreate-select class="sortable floating-label" name="status" document_id="status" placeholder="Status">
         					<input placeholder="Search" data-template_id="status">
         					<cc-options data-fetch_collection="module_activity" data-fetch_name="module_id" data-fetch_value="5e6d79f9d8cdbe53927a0443" data-template_id="status" class="overflow:overlay">
         						<cc-option class="template" data-template_id="status" value="{{data._id}}">
-        							<h3 data-collection="modules" data-document_id="" name="name">Status Name</h3>
+        							<h3 collection="modules" document_id="" name="name">Status Name</h3>
         						</cc-option>
         					</cc-options>
         				</cocreate-select>
@@ -196,7 +196,7 @@
                         <div id="tasklist" class="card template">
                             <div class="margin:15px font-size:18px text-dark-gray">
                                 <span class="display:inline-block">
-                  <input data-collection="module_activity" data-document_id="" name="clone-name" id="stage-name" class="input_field" placeholder="Tasklist">
+                  <input collection="module_activity" document_id="" name="clone-name" id="stage-name" class="input_field" placeholder="Tasklist">
                 </span>
                                 <span class="float:right display:inline-block"><a data-clone_id="tasklist" class="deleteBtn"><i class="fas fa-times"></i></a></span>
                             </div>
@@ -214,7 +214,7 @@
             	          <input type="checkbox" name="taskcheck"><span class="mark display:inline-block"></span>
             	        </label>
                                         <div class="flex-grow-1">
-                                            <input class="floating-label" data-document_id="5d8c79e7e4be424681b5e48d" name="taskname" placeholder="Task Name">
+                                            <input class="floating-label" document_id="5d8c79e7e4be424681b5e48d" name="taskname" placeholder="Task Name">
                                         </div>
                                         <a data-clone_id="task-item" class="margin:15px-left font-size:20px deleteBtn"><i class="far fa-trash-alt"></i></a>
                                     </div>
@@ -238,7 +238,7 @@
                 <!--<div class="display:flex align-items:center padding-top:20px">-->
                 <!--  <div class='avatar padding:20px-right margin:10px-top'></div>-->
                 <!--  <div class="flex-1-1">-->
-                <!--    <input data-document_id="5e07c2a43145e2497e494bf0" type="text" name="name" class="floating-label" placeholder="Comment">-->
+                <!--    <input document_id="5e07c2a43145e2497e494bf0" type="text" name="name" class="floating-label" placeholder="Comment">-->
                 <!--  </div>-->
                 <!--</div>-->
                 <!--<div class="padding-top:20px">-->
