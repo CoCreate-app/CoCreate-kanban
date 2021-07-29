@@ -71,7 +71,7 @@
 				<li class="margin-right:15px"><a class="btn-modal-minimize"><i class="far fa-window-minimize"></i></a></li>
 
 				<!-- fullscreen toogle and icon transform-->
-				<li class="margin-right:15px"><a data-fullscreen><i data-toggle="fa-compress, fa-expand" class="fas fa-expand"></i></a></li>
+				<li class="margin-right:15px"><a fullscreen><i data-toggle="fa-compress, fa-expand" class="fas fa-expand"></i></a></li>
 
 				<!-- Render Module Form -->
 				<li class="margin-right:15px">
@@ -123,7 +123,7 @@
 
         				<cocreate-select class="sortable floating-label" name="stage" document_id="stage" placeholder="Stage">
         					<input placeholder="Search" template_id="stage">
-        					<cc-options fetch-collection="module_activity" fetch-name="module_id" data-fetch_value="5e6d79f9d8cdbe53927a0443" template_id="stage" class="overflow:overlay">
+        					<cc-options fetch-collection="module_activity" fetch-name="module_id" fetch-value="5e6d79f9d8cdbe53927a0443" template_id="stage" class="overflow:overlay">
         						<cc-option class="template" template_id="stage" value="{{data._id}}">
         							<h3 collection="module_activity" document_id="" name="name">Stage Name</h3>
         						</cc-option>
@@ -179,7 +179,7 @@
                     <div class="flex-grow:1 width:150px padding-right:10px">
         				<cocreate-select class="sortable floating-label" name="status" document_id="status" placeholder="Status">
         					<input placeholder="Search" template_id="status">
-        					<cc-options fetch-collection="module_activity" fetch-name="module_id" data-fetch_value="5e6d79f9d8cdbe53927a0443" template_id="status" class="overflow:overlay">
+        					<cc-options fetch-collection="module_activity" fetch-name="module_id" fetch-value="5e6d79f9d8cdbe53927a0443" template_id="status" class="overflow:overlay">
         						<cc-option class="template" template_id="status" value="{{data._id}}">
         							<h3 collection="modules" document_id="" name="name">Status Name</h3>
         						</cc-option>
