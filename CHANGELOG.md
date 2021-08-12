@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.1.2...v1.1.3) (2021-08-12)
+
+
+### Bug Fixes
+
+* update data-module_id to document_id ([837b14d](https://github.com/CoCreate-app/CoCreate-kanban/commit/837b14d26a93390b58b289cfc9e0bd8469fe6ac6))
+
 ## [1.1.2](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.1.1...v1.1.2) (2021-08-02)
 
 
