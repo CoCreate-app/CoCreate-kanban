@@ -1,3 +1,13 @@
+## [1.1.4](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.1.3...v1.1.4) (2021-08-14)
+
+
+### Bug Fixes
+
+* remove data- from dnd attributes ([24bf2be](https://github.com/CoCreate-app/CoCreate-kanban/commit/24bf2bef24bfa67ea69932b70eae48ce72ca02cb))
+* rename data-element_id to element_id ([a1d1e43](https://github.com/CoCreate-app/CoCreate-kanban/commit/a1d1e430aa779dc4e0127a559d97f58ba523e15c))
+* replace data-transform with toggle ([365f7bc](https://github.com/CoCreate-app/CoCreate-kanban/commit/365f7bca0a1de7048f7ffed77dbe360fdd61c33d))
+* update to  docs ([8b87e10](https://github.com/CoCreate-app/CoCreate-kanban/commit/8b87e10e1fc30105552e03b24604cf637d687f01))
+
 ## [1.1.3](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.1.2...v1.1.3) (2021-08-12)
 
 
