@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.1.4...v1.1.5) (2021-08-15)
+
+
+### Bug Fixes
+
+* remove data- from data-parse and data-save attributes ([6b5a34f](https://github.com/CoCreate-app/CoCreate-kanban/commit/6b5a34f08c1fba44062580f8a10cc6147c34296f))
+
 ## [1.1.4](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.1.3...v1.1.4) (2021-08-14)
 
 
