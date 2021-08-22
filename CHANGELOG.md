@@ -1,3 +1,10 @@
+## [1.1.8](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.1.7...v1.1.8) (2021-08-22)
+
+
+### Bug Fixes
+
+* removed data- from main-content, clone, filter-value_type ([ada1d8a](https://github.com/CoCreate-app/CoCreate-kanban/commit/ada1d8a78712fd4848d8bdbe1b8dc53cd7ca33b8))
+
 ## [1.1.7](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.1.6...v1.1.7) (2021-08-22)
 
 
