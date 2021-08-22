@@ -11,7 +11,7 @@
 
 	<body>
 		<div id="modal-viewport" class="hidden"></div>
-		<div class="nav display:flex align-items:center background:whitesmoke" data-main_content_id="content" scroll-effect="hide-nav" scroll-up="1" scroll-down="1">
+		<div class="nav display:flex align-items:center background:whitesmoke" main-content_id="content" scroll-effect="hide-nav" scroll-up="1" scroll-down="1">
 
 			<!-- Horizontal Scroll Nav/Tabs -->
 			<ul class="overflow:overlay display:inline-flex direction:rtl font-size:20px align-items:center list-style-type:none width:100% height:50px">
@@ -38,7 +38,7 @@
 				</li>
 			</ul>
 		</div>
-		<div data-main_content_id="content">
+		<div main-content_id="content">
 
 			<div id="board" class="display:flex overflow:overlay height:90vh">
 
@@ -57,7 +57,7 @@
 									placeholder="Stage">
 							</span>
 							<span class="float:right display:inline-block">
-				  				<a data-clone_id="stage" actions="deleteDocument" collection="module_activity" document_id="{{stage._id}}">
+				  				<a clone_id="stage" actions="deleteDocument" collection="module_activity" document_id="{{stage._id}}">
 				  					<i class="fas fa-times"></i>
 				  				</a>
 							</span>
@@ -126,7 +126,7 @@
 							</div>
 						</div>
 						<div class="margin:0px_15px padding:15px_0px">
-							<!--<a data-clone_id="{{stage._id}}-card" actions="createClone" data-clone_name="card-name"><i class="fas fa-plus"></i> New Card</a>-->
+							<!--<a clone_id="{{stage._id}}-card" actions="createClone" clone-name="card-name"><i class="fas fa-plus"></i> New Card</a>-->
 							<form collection="module_activity">
 								<input type="hidden" document_id="" name="stage" value="{{stage._id}}" />
 								<a actions="createDocument"><i class="fas fa-plus"></i> New Card</a>
