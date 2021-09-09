@@ -1,3 +1,10 @@
+## [1.1.14](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.1.13...v1.1.14) (2021-09-09)
+
+
+### Bug Fixes
+
+* CoCreate.config directory, path, name and  public ([467a4d5](https://github.com/CoCreate-app/CoCreate-kanban/commit/467a4d589d316e80d7601571cb0f7f9e55f41626))
+
 ## [1.1.13](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.1.12...v1.1.13) (2021-09-08)
 
 
