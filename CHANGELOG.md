@@ -1,3 +1,10 @@
+## [1.1.18](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.1.17...v1.1.18) (2021-09-12)
+
+
+### Bug Fixes
+
+* update sidenav to use resize and toggle ([66fe5c6](https://github.com/CoCreate-app/CoCreate-kanban/commit/66fe5c62047e87c0f122a9b74be93192fdabfbfa))
+
 ## [1.1.17](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.1.16...v1.1.17) (2021-09-09)
 
 
