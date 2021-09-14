@@ -1,3 +1,10 @@
+## [1.1.20](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.1.19...v1.1.20) (2021-09-14)
+
+
+### Bug Fixes
+
+* add cocreate.app to domains ([c5d9fc3](https://github.com/CoCreate-app/CoCreate-kanban/commit/c5d9fc35794642846d25e0af9bfe2befbe0bc663))
+
 ## [1.1.19](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.1.18...v1.1.19) (2021-09-13)
 
 
