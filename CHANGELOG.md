@@ -1,3 +1,10 @@
+## [1.1.33](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.1.32...v1.1.33) (2021-10-15)
+
+
+### Bug Fixes
+
+* update packages ([617b742](https://github.com/CoCreate-app/CoCreate-kanban/commit/617b7427495425f520c57db80e70b17b44e8f800))
+
 ## [1.1.32](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.1.31...v1.1.32) (2021-10-15)
 
 
