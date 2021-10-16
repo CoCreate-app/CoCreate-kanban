@@ -1,3 +1,10 @@
+## [1.1.35](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.1.34...v1.1.35) (2021-10-16)
+
+
+### Bug Fixes
+
+* update socket package to fix bug in docs ([ac4519f](https://github.com/CoCreate-app/CoCreate-kanban/commit/ac4519f69d448ba2e6f6c0c96597e429dc75b240))
+
 ## [1.1.34](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.1.33...v1.1.34) (2021-10-15)
 
 
