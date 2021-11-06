@@ -1,3 +1,10 @@
+## [1.1.41](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.1.40...v1.1.41) (2021-11-06)
+
+
+### Bug Fixes
+
+* removed cdn from workflows as modules dont have javascript and are built using existing componennts ([769b1fe](https://github.com/CoCreate-app/CoCreate-kanban/commit/769b1fe249b968274c1ae78d0a9ed0e2348148af))
+
 ## [1.1.40](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.1.39...v1.1.40) (2021-11-04)
 
 
