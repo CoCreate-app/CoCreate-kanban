@@ -1,3 +1,10 @@
+## [1.1.52](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.1.51...v1.1.52) (2021-11-26)
+
+
+### Bug Fixes
+
+* docs sidenav width ([b6e13f4](https://github.com/CoCreate-app/CoCreate-kanban/commit/b6e13f46d596ca5eb7fc2ad300c6190c2b3e57b8))
+
 ## [1.1.51](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.1.50...v1.1.51) (2021-11-26)
 
 
