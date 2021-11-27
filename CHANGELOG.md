@@ -1,3 +1,10 @@
+## [1.1.53](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.1.52...v1.1.53) (2021-11-27)
+
+
+### Bug Fixes
+
+* update docs api and cocreateJS script ([a5f39ff](https://github.com/CoCreate-app/CoCreate-kanban/commit/a5f39ff771e1f8cf7635c8ad7298aa6ab7b55291))
+
 ## [1.1.52](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.1.51...v1.1.52) (2021-11-26)
 
 
