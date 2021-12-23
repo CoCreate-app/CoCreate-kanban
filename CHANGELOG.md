@@ -1,3 +1,10 @@
+## [1.1.58](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.1.57...v1.1.58) (2021-12-23)
+
+
+### Bug Fixes
+
+* renamed filter-value_type to filter-value-type ([6fd259e](https://github.com/CoCreate-app/CoCreate-kanban/commit/6fd259e2187b25f2a522956b7f59a76bd8550794))
+
 ## [1.1.57](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.1.56...v1.1.57) (2021-12-15)
 
 
