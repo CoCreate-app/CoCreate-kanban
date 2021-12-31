@@ -1,3 +1,10 @@
+## [1.1.59](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.1.58...v1.1.59) (2021-12-31)
+
+
+### Bug Fixes
+
+* added chart=chartjs as a selector. cleaned demo ([0384ae0](https://github.com/CoCreate-app/CoCreate-kanban/commit/0384ae009399d73995d6292f93d4e5037aae504d))
+
 ## [1.1.58](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.1.57...v1.1.58) (2021-12-23)
 
 
