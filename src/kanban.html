@@ -46,7 +46,7 @@
 				 order-type="asc" template_id="filter_test" render_id="stage" pass_id="fetch_value" droppable>
 
 					<!-- Stage Column -->
-					<div class="template margin:10px background:whitesmoke max-width:300px" template_id="filter_test" element_id="{{stage._id}}" document_id="{{stage._id}}" draggable>
+					<div class="template margin:10px background:whitesmoke max-width:300px" template_id="filter_test" eid="{{stage._id}}" document_id="{{stage._id}}" draggable>
 						<div class="margin:15px font-size:18px color-dark-gray">
 							<span class="display:inline-block">
 							  	<input class="input_field"
@@ -67,7 +67,7 @@
 							<div class="display:flex flex-direction:column height:100% sortable" dnd-group-name="card" fetch-collection="module_activity" filter-name="stage" filter-value="{{stage._id}}" filter-operator="$eq" fetch-count="" order-by="stage-index_position" order-type="asc" template_id="{{stage._id}}" droppable>
 
 								<!-- Card -->
-								<div class="template card margin-bottom:10px padding:10px background:white" template_id="{{stage._id}}" data-value="{{data._id}}" document_id="{{data._id}}" draggable>
+								<div class="template card margin-bottom:10px padding:10px background:white" template_id="{{stage._id}}" value="{{data._id}}" document_id="{{data._id}}" draggable>
 									<div class="width:100%">
 										<img collection="module_activity" document_id="{{data._id}}" name="image" src="https://via.placeholder.com/150" width="100%"></img>
 									</div>
