@@ -1,3 +1,10 @@
+## [1.1.61](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.1.60...v1.1.61) (2022-01-01)
+
+
+### Bug Fixes
+
+* get-value attribute value now supports a selector added # to all values currently in get-value attributes ([0f005f0](https://github.com/CoCreate-app/CoCreate-kanban/commit/0f005f095b95c3830bae0fb006d509974a77922b))
+
 ## [1.1.60](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.1.59...v1.1.60) (2022-01-01)
 
 
