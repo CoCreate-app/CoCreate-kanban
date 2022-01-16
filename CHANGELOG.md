@@ -1,3 +1,10 @@
+## [1.1.63](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.1.62...v1.1.63) (2022-01-16)
+
+
+### Bug Fixes
+
+* updated saveDocument to save and createDocument replaced with save, reset ([2501858](https://github.com/CoCreate-app/CoCreate-kanban/commit/25018589fc69dc03ab325d115bde2096c493b7d8))
+
 ## [1.1.62](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.1.61...v1.1.62) (2022-01-16)
 
 
