@@ -1,3 +1,10 @@
+## [1.1.62](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.1.61...v1.1.62) (2022-01-16)
+
+
+### Bug Fixes
+
+* update class overflow:overlay to overflow:auto ([5f26e22](https://github.com/CoCreate-app/CoCreate-kanban/commit/5f26e228e3e53622dfb2ba5cadb26bc199db303c))
+
 ## [1.1.61](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.1.60...v1.1.61) (2022-01-01)
 
 
