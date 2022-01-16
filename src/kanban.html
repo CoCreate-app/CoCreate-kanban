@@ -128,7 +128,7 @@
 							<!--<a clone_id="{{stage._id}}-card" actions="createClone" clone-name="card-name"><i class="fas fa-plus"></i> New Card</a>-->
 							<form collection="module_activity">
 								<input type="hidden" document_id="" name="stage" value="{{stage._id}}" />
-								<a actions="createDocument"><i class="fas fa-plus"></i> New Card</a>
+								<a actions="save, reset"><i class="fas fa-plus"></i> New Card</a>
 							</form>
 						</div>
 					</div>
@@ -138,7 +138,7 @@
 
 			<form collection="module_activity">
 				<input type="hidden" pass_id="module_id" document_id="" name="module_id" value="5e6d79f9d8cdbe53927a0443" />
-				<button class="position:fixed bottom:15px right:15px background:dodgerblue border-radius:50% grow-hover" actions="createDocument">
+				<button class="position:fixed bottom:15px right:15px background:dodgerblue border-radius:50% grow-hover" actions="save, reset">
 		  <i class="fas fa-plus"></i>
 		</button>
 			</form>
