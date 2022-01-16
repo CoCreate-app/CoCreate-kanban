@@ -61,7 +61,7 @@
 		<nav class="nav display:flex align-items:center background:whitesmoke" content_id="content" scroll="sticky-nav, hide-nav" scroll-up="5" scroll-down="5">
 
 			<!-- Horizontal Scroll Nav/Tabs -->
-			<ul class="display:inline-flex direction:rtl overflow:overlay font-size:20px align-items:center list-style-type:none width:100% height:50px">
+			<ul class="display:inline-flex direction:rtl overflow:auto font-size:20px align-items:center list-style-type:none width:100% height:50px">
 
 				<!-- Modal Controls -->
 				<li class="margin-right:15px"><a class="btn-modal-close"><i class="fas fa-times"></i></a></li>
@@ -121,7 +121,7 @@
 
         				<cocreate-select class="sortable floating-label" name="stage" document_id="stage" placeholder="Stage">
         					<input placeholder="Search" template_id="stage">
-        					<cc-options fetch-collection="module_activity" fetch-name="module_id" fetch-value="5e6d79f9d8cdbe53927a0443" template_id="stage" class="overflow:overlay">
+        					<cc-options fetch-collection="module_activity" fetch-name="module_id" fetch-value="5e6d79f9d8cdbe53927a0443" template_id="stage" class="overflow:auto">
         						<cc-option class="template" template_id="stage" value="{{data._id}}">
         							<h3 collection="module_activity" document_id="" name="name">Stage Name</h3>
         						</cc-option>
@@ -134,7 +134,7 @@
 
         				<cocreate-select class="sortable floating-label" name="team" placeholder="Team" multiple>
         					<input placeholder="Search" template_id="team">
-                            <cc-options fetch-collection="users" template_id="team" class="overflow:overlay">
+                            <cc-options fetch-collection="users" template_id="team" class="overflow:auto">
                                 <cc-option class="template display:flex margin:5px" template_id="team" value="{{data._id}}">
 
                                     <!-- Avatar -->
@@ -166,7 +166,7 @@
                         <!-- CoCreate Select -->
                         <cocreate-select class="sortable floating-label" name="labels" multiple placeholder="Labels">
                             <input class="option-search" placeholder="Search">
-                            <cc-options class="overflow:overlay">
+                            <cc-options class="overflow:auto">
                                 <cc-option class="display:flex margin:5px" value="Open">Open</cc-option>
                                 <cc-option class="display:flex margin:5px" value="Closed">Closed</cc-option>
                             </cc-options>
@@ -177,7 +177,7 @@
                     <div class="flex-grow:1 width:150px padding-right:10px">
         				<cocreate-select class="sortable floating-label" name="status" document_id="status" placeholder="Status">
         					<input placeholder="Search" template_id="status">
-        					<cc-options fetch-collection="module_activity" fetch-name="module_id" fetch-value="5e6d79f9d8cdbe53927a0443" template_id="status" class="overflow:overlay">
+        					<cc-options fetch-collection="module_activity" fetch-name="module_id" fetch-value="5e6d79f9d8cdbe53927a0443" template_id="status" class="overflow:auto">
         						<cc-option class="template" template_id="status" value="{{data._id}}">
         							<h3 collection="modules" document_id="" name="name">Status Name</h3>
         						</cc-option>
