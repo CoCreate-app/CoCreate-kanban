@@ -1,3 +1,10 @@
+## [1.1.65](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.1.64...v1.1.65) (2022-02-03)
+
+
+### Bug Fixes
+
+* replaced show and hide class hidden with attribute hidden ([c250357](https://github.com/CoCreate-app/CoCreate-kanban/commit/c25035782460d9f234051925932f9a05d3ea71c6))
+
 ## [1.1.64](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.1.63...v1.1.64) (2022-02-01)
 
 
