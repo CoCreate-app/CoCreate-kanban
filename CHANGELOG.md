@@ -1,3 +1,16 @@
+# [1.2.0](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.1.65...v1.2.0) (2022-02-06)
+
+
+### Bug Fixes
+
+* cdn script ([3d271f0](https://github.com/CoCreate-app/CoCreate-kanban/commit/3d271f048980a6255315e7dcdc199e20581be2cb))
+* src/ file names ([0e2cf66](https://github.com/CoCreate-app/CoCreate-kanban/commit/0e2cf669dd4fdda8fddd458e55144e417a55a4f5))
+
+
+### Features
+
+* made the satge name and the card name contenteditable ([dc56408](https://github.com/CoCreate-app/CoCreate-kanban/commit/dc5640834c72c6f972d31231ee9392e063a4cef0))
+
 ## [1.1.65](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.1.64...v1.1.65) (2022-02-03)
 
 
