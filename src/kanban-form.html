@@ -6,52 +6,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" href="https://cdn.cocreate.app/favicon.ico" type="image/ico" sizes="16x16">
-		<title>Payment Form | CoCreate</title>
+		<title>Kanban Form | CoCreate</title>
         <link rel="stylesheet" href="../index.css" collection="files" document_id="60972231624235187e4d6979" name="src" type="text/css" save="true" parse="true" />
 
 	</head>
-        <style type="text/css">
-            .flex-half {
-                flex-grow: 1;
-                flex-basis: 50%;
-            }
-
-            flex-basis-50precent {
-                flex-basis: 50%;
-
-            }
-
-            .flex-half:nth-of-type(1) {
-                padding-right: 10px;
-            }
-
-            .flex-half:nth-of-type(2) {
-                padding-left: 10px;
-            }
-
-            .round-iconBtn {
-                background-color: #dedede;
-                color: grey;
-                font-size: 20px;
-                border-radius: 50px;
-                width: 50px;
-                height: 50px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            .comment-content {
-                padding: 10px;
-                padding-right: 15px;
-                border: 1px solid #dedede;
-                border-radius: 3px 20px 20px 3px;
-            }
-
-            .floating-label {
-                margin: 10px;
-            }
-        </style>
 
 	<body>
 		<!-- Modal Viewport -->
@@ -108,7 +66,7 @@
 		<!-- Main Content -->
 		<main class="padding:10px" content_id="content">
 
-            <form realtime="true" collection="module_activity" pass_id="form-fields">
+            <form realtime="true" collection="testing" pass_id="form-fields">
 
                 <input type="hidden" name="module_id" pass-value_id="module_id" placeholder="Module Id">
 
@@ -177,7 +135,8 @@
                     <div class="flex-grow:1 width:150px padding-right:10px">
         				<cocreate-select class="sortable floating-label" name="status" document_id="status" placeholder="Status">
         					<input placeholder="Search" template_id="status">
-        					<cc-options fetch-collection="module_activity" fetch-name="module_id" fetch-value="5e6d79f9d8cdbe53927a0443" template_id="status" class="overflow:auto">
+    						<div template_id="status" filter-name="type" filter-value="5ff747727005da1c272740ab"></div>
+        					<cc-options fetch-collection="tags" fetch-name="module_id" fetch-value="" template_id="status" pass_id="module_id" class="overflow:auto">
         						<cc-option class="template" template_id="status" value="{{data._id}}">
         							<h3 collection="modules" document_id="" name="name">Status Name</h3>
         						</cc-option>
@@ -194,8 +153,8 @@
                         <div id="tasklist" class="card template">
                             <div class="margin:15px font-size:18px text-dark-gray">
                                 <span class="display:inline-block">
-                  <input collection="module_activity" document_id="" name="clone-name" id="stage-name" class="input_field" placeholder="Tasklist">
-                </span>
+                                    <input collection="module_activity" document_id="" name="clone-name" id="stage-name" class="input_field" placeholder="Tasklist">
+                                </span>
                                 <span class="float:right display:inline-block"><a clone_id="tasklist" class="deleteBtn"><i class="fas fa-times"></i></a></span>
                             </div>
                             <div class="border:bottom border-color-extra-medium-gray">
@@ -209,8 +168,8 @@
                                     <!-- sortable task item -->
                                     <div id="task-item" class="display:flex flex-wrap:wrap:nowrap align-items:center margin:0px_15px padding:10px_0px template">
                                         <label class="checkbox">
-            	          <input type="checkbox" name="taskcheck"><span class="mark display:inline-block"></span>
-            	        </label>
+                                            <input type="checkbox" name="taskcheck"><span class="mark display:inline-block"></span>
+                            	        </label>
                                         <div class="flex-grow-1">
                                             <input class="floating-label" document_id="5d8c79e7e4be424681b5e48d" name="taskname" placeholder="Task Name">
                                         </div>
@@ -229,7 +188,7 @@
                 </div>
                 <!-- saveFetch -->
 
-                <div style=width="100%" class="noDrag">
+                <div style="width:100%" class="noDrag">
                     <input id="tasklist-name"><a clone_id="tasklist" class="cloneBtn noDrag" style="display: block" clone-name="tasklist-name">New Tasklist</a>
                 </div>
 
