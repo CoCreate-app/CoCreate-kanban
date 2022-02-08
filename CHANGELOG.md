@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.2...v1.2.3) (2022-02-08)
+
+
+### Bug Fixes
+
+* update name to selected type on + new card btn ([7d5015e](https://github.com/CoCreate-app/CoCreate-kanban/commit/7d5015e4149413560bbd49a026d9b7329d3ecb90))
+
 ## [1.2.2](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.1...v1.2.2) (2022-02-08)
 
 
