@@ -77,7 +77,7 @@
                 <div class="padding-top:20px display:flex flex-wrap:wrap-wrap">
                     <div class="flex-grow:1 width:150px padding-right:10px">
 
-        				<cocreate-select class="sortable floating-label" name="stage" document_id="stage" placeholder="Stage">
+        				<cocreate-select sortable class="floating-label" name="stage" document_id="stage" placeholder="Stage">
         					<input placeholder="Search" template_id="stage">
         					<cc-options fetch-collection="module_activity" fetch-name="module_id" fetch-value="5e6d79f9d8cdbe53927a0443" template_id="stage" class="overflow:auto">
         						<cc-option class="template" template_id="stage" value="{{data._id}}">
@@ -90,7 +90,7 @@
 
                     <div class="flex-grow:1 width:150px padding-right:10px">
 
-        				<cocreate-select class="sortable floating-label" name="team" placeholder="Team" multiple>
+        				<cocreate-select sortable class="floating-label" name="team" placeholder="Team" multiple>
         					<input placeholder="Search" template_id="team">
                             <cc-options fetch-collection="users" template_id="team" class="overflow:auto">
                                 <cc-option class="template display:flex margin:5px" template_id="team" value="{{data._id}}">
@@ -122,7 +122,7 @@
                     <div class="flex-grow:1 width:150px padding-right:10px">
 
                         <!-- CoCreate Select -->
-                        <cocreate-select class="sortable floating-label" name="labels" multiple placeholder="Labels">
+                        <cocreate-select sortable class="floating-label" name="labels" multiple placeholder="Labels">
                             <input class="option-search" placeholder="Search">
                             <cc-options class="overflow:auto">
                                 <cc-option class="display:flex margin:5px" value="Open">Open</cc-option>
@@ -133,7 +133,7 @@
                     </div>
 
                     <div class="flex-grow:1 width:150px padding-right:10px">
-        				<cocreate-select class="sortable floating-label" name="status" document_id="status" placeholder="Status">
+        				<cocreate-select sortable class="floating-label" name="status" document_id="status" placeholder="Status">
         					<input placeholder="Search" template_id="status">
     						<div template_id="status" filter-name="type" filter-value="5ff747727005da1c272740ab"></div>
         					<cc-options fetch-collection="tags" fetch-name="module_id" fetch-value="" template_id="status" pass_id="module_id" class="overflow:auto">
@@ -148,7 +148,7 @@
                 <!-- Tasklist Component -->
                 <div id="saveFetch1" class="domEditor" name='tasklists' pass_id="form-fields">
 
-                    <div class="Sortable display:flex align-items-flex-start flex-wrap:wrap-wrap" dnd-group-name="tasklist">
+                    <div sortable class="display:flex align-items-flex-start flex-wrap:wrap-wrap" dnd-group-name="tasklist">
                         <!-- sortable card -->
                         <div id="tasklist" class="card template">
                             <div class="margin:15px font-size:18px text-dark-gray">
@@ -164,7 +164,7 @@
                                         <div style="transform:translateX(-30%);"></div>
                                     </div>
                                 </div>
-                                <div class="Sortable" dnd-group-name="task-items">
+                                <div sortable dnd-group-name="task-items">
                                     <!-- sortable task item -->
                                     <div id="task-item" class="display:flex flex-wrap:wrap:nowrap align-items:center margin:0px_15px padding:10px_0px template">
                                         <label class="checkbox">
