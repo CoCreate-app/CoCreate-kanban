@@ -1,3 +1,10 @@
+## [1.2.12](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.11...v1.2.12) (2022-03-21)
+
+
+### Bug Fixes
+
+* update class sortable to attribute sortable ([2aee848](https://github.com/CoCreate-app/CoCreate-kanban/commit/2aee8486946725758a0ab89b438bae6ca51cd9f7))
+
 ## [1.2.11](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.10...v1.2.11) (2022-03-11)
 
 
