@@ -1,6 +1,6 @@
 {
   "name": "@cocreate/kanban",
-  "version": "1.2.12",
+  "version": "1.2.13",
   "description": "A simple kanban component in vanilla javascript. Easily configured using HTML5 attributes and/or JavaScript API.",
   "keywords": [
     "kanban",
