@@ -1,3 +1,10 @@
+## [1.2.17](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.16...v1.2.17) (2022-04-16)
+
+
+### Bug Fixes
+
+* bump version to 1.14.1. contains modal message bug fixes ([b13d63b](https://github.com/CoCreate-app/CoCreate-kanban/commit/b13d63b4f6a80a62e5fb0388fb95d1e43d440a50))
+
 ## [1.2.16](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.15...v1.2.16) (2022-04-15)
 
 
