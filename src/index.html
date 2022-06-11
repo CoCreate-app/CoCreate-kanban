@@ -24,13 +24,13 @@
 
 				<!-- Modal Controls -->
 				<li class="margin-right:15px">
-					<a class="btn-modal-close"><i class="fas fa-times"></i></a>
+					<a actions="closeModal"><i class="fas fa-times"></i></a>
 				</li>
 				<li class="margin-right:15px">
-					<a class="btn-modal-maximize"><i toggle="fa-window-restore, fa-window-maximize" class="far fa-window-maximize"></i></a>
+					<a actions="minMaxModal"><i toggle="fa-window-restore, fa-window-maximize" class="far fa-window-maximize"></i></a>
 				</li>
 				<li class="margin-right:15px">
-					<a class="btn-modal-minimize"><i class="far fa-window-minimize"></i></a>
+					<a actions="parkModal"><i class="far fa-window-minimize"></i></a>
 				</li>
 
 				<!-- fullscreen toogle and icon transform-->
@@ -63,7 +63,7 @@
 							  	<p collection="{{stage.collection}}" document_id="{{stage._id}}" name="name" contenteditable draggable="false"></p>
 							</span>
 							<span class="float:right display:inline-block">
-				  				<a actions="deleteDocument" collection="{{stage.collection}}" document_id="{{stage._id}}">
+				  				<a actions="deleteDocument, closeModal" collection="{{stage.collection}}" document_id="{{stage._id}}">
 				  					<i class="fas fa-times"></i>
 				  				</a>
 							</span>
@@ -153,7 +153,7 @@
 
 		</div>
 
-		<script src="https://cdn.cocreate.app/1.15.13/CoCreate.min.js" ></script>
+		<script src="https://cdn.cocreate.app/1.16.0/CoCreate.min.js" ></script>
         <!--<script src="../../../CoCreateJS/dist/CoCreate.js"></script>-->
         
 	</body>
