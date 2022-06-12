@@ -1,3 +1,13 @@
+## [1.2.32](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.31...v1.2.32) (2022-06-12)
+
+
+### Bug Fixes
+
+* bump cdn version to 1.15.13 ([5e4bb2a](https://github.com/CoCreate-app/CoCreate-kanban/commit/5e4bb2acabf19b99303766dc79b6a5cf94f68c85))
+* update dependencies ([df00918](https://github.com/CoCreate-app/CoCreate-kanban/commit/df00918fd1f1fc6c77d374b2efa12f048e95787e))
+* update docs css document_id ([2873da4](https://github.com/CoCreate-app/CoCreate-kanban/commit/2873da45db858402d4c461b455510677667118dc))
+* update modal btn to actions ([9ca0452](https://github.com/CoCreate-app/CoCreate-kanban/commit/9ca045209b2e314387ee3732cf27d6243853e36f))
+
 ## [1.2.31](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.30...v1.2.31) (2022-06-02)
 
 
