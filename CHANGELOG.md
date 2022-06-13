@@ -1,3 +1,10 @@
+## [1.2.34](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.33...v1.2.34) (2022-06-13)
+
+
+### Bug Fixes
+
+* update modal btn to actions ([2f2fea4](https://github.com/CoCreate-app/CoCreate-kanban/commit/2f2fea4b2aaa951e907164697b8e59672b603cdb))
+
 ## [1.2.33](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.32...v1.2.33) (2022-06-13)
 
 
