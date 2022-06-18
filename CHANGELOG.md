@@ -1,3 +1,10 @@
+## [1.2.37](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.36...v1.2.37) (2022-06-18)
+
+
+### Bug Fixes
+
+* typo with deleteDocument and closeModal ([d4514f3](https://github.com/CoCreate-app/CoCreate-kanban/commit/d4514f37e62c75e83d5355b6910c9740e3620ee9))
+
 ## [1.2.36](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.35...v1.2.36) (2022-06-18)
 
 
