@@ -47,7 +47,7 @@
 				<input placeholder="Search" template_id="type">
 				<cc-options fetch-collection="tags" template_id="type" filter-name="module_id" filter-value="60eb8361b979b4001744b339" class="overflow:auto">
 					<cc-option class="template" template_id="type" value="{{data._id}}">
-						<h3 collection="{{collection}}" document_id="{{data._id}}" name="name">Type Name</h3>
+						<h3>{{data.name}}</h3>
 					</cc-option>
 				</cc-options>
 			</cocreate-select>
@@ -63,7 +63,7 @@
 							  	<p collection="{{stage.collection}}" document_id="{{stage._id}}" name="name" contenteditable draggable="false"></p>
 							</span>
 							<span class="float:right display:inline-block">
-				  				<a actions="deleteDocument, closeModal" collection="{{stage.collection}}" document_id="{{stage._id}}">
+				  				<a actions="deleteDocument" collection="{{stage.collection}}" document_id="{{stage._id}}">
 				  					<i class="fas fa-times"></i>
 				  				</a>
 							</span>
@@ -153,8 +153,8 @@
 
 		</div>
 
-		<script src="https://cdn.cocreate.app/1.17.1/CoCreate.min.js" ></script>
-        <!--<script src="../../../CoCreateJS/dist/CoCreate.js"></script>-->
+		<script src="https://cdn.cocreate.app/1.18.2/CoCreate.min.js" ></script>
+        <!-- <script src="../../../CoCreateJS/dist/CoCreate.js"></script> -->
         
 	</body>
 
