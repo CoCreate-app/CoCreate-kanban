@@ -1,3 +1,10 @@
+## [1.2.38](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.37...v1.2.38) (2022-06-19)
+
+
+### Bug Fixes
+
+* update templates to use placeholder ([6e96413](https://github.com/CoCreate-app/CoCreate-kanban/commit/6e9641371c598031596999ca853da8340bae7640))
+
 ## [1.2.37](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.36...v1.2.37) (2022-06-18)
 
 
