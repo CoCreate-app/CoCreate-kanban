@@ -1,3 +1,10 @@
+## [1.2.43](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.42...v1.2.43) (2022-07-03)
+
+
+### Bug Fixes
+
+* update pass-fetch and pass-filter attributes ([cb0e92d](https://github.com/CoCreate-app/CoCreate-kanban/commit/cb0e92d5183d0c30c260e7a40e62bb4d99af91a6))
+
 ## [1.2.42](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.41...v1.2.42) (2022-06-27)
 
 
