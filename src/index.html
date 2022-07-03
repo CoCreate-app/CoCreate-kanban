@@ -61,6 +61,7 @@
 						<div class="box-shadow-bottom position:sticky top:0 padding:15px font-size:18px z-index:1">
 							<span class="display:inline-block">
 							  	<p collection="{{stage.collection}}" document_id="{{stage._id}}" name="name" contenteditable draggable="false"></p>
+							  	<!-- <p>{{stage.collection}} {{collection}}</p> -->
 							</span>
 							<span class="float:right display:inline-block">
 				  				<a actions="deleteDocument" collection="{{stage.collection}}" document_id="{{stage._id}}">
@@ -93,7 +94,8 @@
 											<span class="cocreate-badge round badge-danger margin-right:10px font-size:10px padding:0px_20px"></span>
 											<span class="cocreate-badge round margin-right:10px font-size:10px padding:0px_20px"></span>
 										</div>
-										<p collection="module_activities" document_id="{{data._id}}" name="name" contenteditable>Card Name</p>
+										<p collection="{{collection}}" document_id="{{data._id}}" name="name" contenteditable>Card Name</p>
+										<!-- <p>{{collection}} {{data.collection}}</p> -->
 										<div class="display:flex margin:10px_0px">
 											<span class="cocreate-badge badge-danger margin-right:10px font-size:14px">
 												<i class="far fa-clock"></i>
@@ -153,8 +155,8 @@
 
 		</div>
 
-		<script src="https://cdn.cocreate.app/1.22.1/CoCreate.min.js" ></script>
-        <!-- <script src="../../../CoCreateJS/dist/CoCreate.js"></script> -->
+		<!-- <script src="https://cdn.cocreate.app/1.22.1/CoCreate.min.js" ></script> -->
+        <script src="../../../CoCreateJS/dist/CoCreate.js"></script>
         
 	</body>
 
