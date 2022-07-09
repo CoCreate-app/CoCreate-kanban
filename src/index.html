@@ -43,8 +43,9 @@
 			</ul>
 		</div>
 		<div content_id="content">
-			<cocreate-select name="kanban-filter" pass_id="module-form" placeholder="Type" set-value=".columns" set-value-key="typeid" sortable class="floating-label">
+			<cocreate-select name="kanban-filter" pass_id="module-form" placeholder="Type" set-value=".columns" set-value-key="typeid" class="floating-label">
 				<input placeholder="Search" template_id="type">
+				<!-- <cc-options fetch-collection="tags" template_id="type" filter-name="module_id" filter-value="62c1e827de9a46c874441b01" class="overflow:auto"> -->
 				<cc-options fetch-collection="tags" template_id="type" filter-name="module_id" filter-value="60eb8361b979b4001744b339" class="overflow:auto">
 					<cc-option class="template" template_id="type" value="{{data._id}}">
 						<h3>{{data.name}}</h3>
@@ -156,8 +157,16 @@
 
 		</div>
 
-		<script src="https://cdn.cocreate.app/1.23.2/CoCreate.min.js" ></script>
-        <!-- <script src="../../../CoCreateJS/dist/CoCreate.js"></script> -->
+		<!-- <script>
+			var config = {                 
+				apiKey: 'a66fad5d-6a1e-4f64-852e-8b8da263',            
+				organization_id: '62c1e825de9a46c874441996',              
+				host: 'test9.cocreate.app'
+			} 
+		</script>	 -->
+
+		<!-- <script src="https://cdn.cocreate.app/1.23.2/CoCreate.min.js" ></script> -->
+        <script src="../../../CoCreateJS/dist/CoCreate.js"></script>
         
 	</body>
 
