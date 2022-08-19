@@ -55,7 +55,7 @@
 
 			<div id="board" class="display:flex overflow:auto">
 				<div filter-name="module_id" filter-value="" filter-operator="$eq" template_id="columns" pass_id="module_id"></div>
-				<div order-by="stage_position" order-type="asc" filter-value-type="number" template_id="columns" pass_id="module_id"></div>
+				<div filter-order-name="stage_position" filter-order-type="asc" filter-value-type="number" template_id="columns" pass_id="module_id"></div>
 				<div id="columns" class="display:flex flex-wrap:nowrap flex-direction:row columns" dnd-group-name="stage" fetch-collection="tags" filter-name="type" filter-value="{{typeid}}" filter-operator="$eq" template_id="columns" render_id="stage" droppable>
 
 					<!-- Column -->
@@ -73,10 +73,10 @@
 						<div class="card-container padding:10px overflow:auto z-index:0">
 
 							<div filter-name="module_id" filter-value="" filter-operator="$eq" template_id="{{stage._id}}" pass_id="module_id"></div>
-							<div order-by="stage-index_position" order-type="asc" filter-value-type="number" template_id="{{stage._id}}"></div>
+							<div filter-order-name="stage-index_position" filter-order-type="asc" filter-value-type="number" template_id="{{stage._id}}"></div>
 
 							<div class="display:flex flex-direction:column height:100% " sortable dnd-group-name="card" fetch-collection="module_activities" fetch-for="lowercase" filter-name='{ "collection":"tags", "document_id":"{{typeid}}", "name":"name" }' filter-value="{{stage._id}}" filter-operator="$eq" template_id="{{stage._id}}" droppable>
-							<!--<div class="display:flex flex-direction:column height:100% " sortable dnd-group-name="card" fetch-collection="module_activities" filter-name="status" filter-value="{{stage._id}}" filter-operator="$eq"  order-by="stage-index_position" order-type="asc" template_id="{{stage._id}}" droppable>-->
+							<!--<div class="display:flex flex-direction:column height:100% " sortable dnd-group-name="card" fetch-collection="module_activities" filter-name="status" filter-value="{{stage._id}}" filter-operator="$eq"  filter-order-name="stage-index_position" filter-order-type="asc" template_id="{{stage._id}}" droppable>-->
 
 								<!-- Card -->
 								<div class="template card position:relative margin-bottom:10px padding:10px background:white" template_id="{{stage._id}}" value="{{data._id}}" document_id="{{data._id}}"  eid="{{data._id}}" draggable>
@@ -165,7 +165,7 @@
 			} 
 		</script>	 -->
 
-		<script src="https://cdn.cocreate.app/1.25.2/CoCreate.min.js" ></script>
+		<script src="https://cdn.cocreate.app/1.25.3/CoCreate.min.js" ></script>
         <!-- <script src="../../../CoCreateJS/dist/CoCreate.js"></script> -->
         
 	</body>
