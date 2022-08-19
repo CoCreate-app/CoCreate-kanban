@@ -1,3 +1,10 @@
+## [1.2.49](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.48...v1.2.49) (2022-08-19)
+
+
+### Bug Fixes
+
+* renamed order-by and order-type to filter-order-name and filter-order-type ([2801eaa](https://github.com/CoCreate-app/CoCreate-kanban/commit/2801eaa6c9a4638add66df6810a077a2bcc5ebbd))
+
 ## [1.2.48](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.47...v1.2.48) (2022-08-01)
 
 
