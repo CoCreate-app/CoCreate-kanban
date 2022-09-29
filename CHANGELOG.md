@@ -1,3 +1,10 @@
+## [1.2.53](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.52...v1.2.53) (2022-09-29)
+
+
+### Bug Fixes
+
+* config renameed to CoCreateConfig ([d5daec0](https://github.com/CoCreate-app/CoCreate-kanban/commit/d5daec07cd6e756c5bf33c226f585569d9c723ea))
+
 ## [1.2.52](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.51...v1.2.52) (2022-09-22)
 
 
