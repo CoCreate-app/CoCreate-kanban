@@ -1,3 +1,10 @@
+## [1.2.60](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.59...v1.2.60) (2022-10-02)
+
+
+### Bug Fixes
+
+* bump @cocreate/hosting and @cocreate/socket-client ([434baba](https://github.com/CoCreate-app/CoCreate-kanban/commit/434babab9d0b2b09a76f670c7993d8dd7d74cbd0))
+
 ## [1.2.59](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.58...v1.2.59) (2022-10-01)
 
 
