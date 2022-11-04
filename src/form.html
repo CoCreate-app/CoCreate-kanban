@@ -80,7 +80,7 @@
         				<cocreate-select sortable class="floating-label" name="stage" document_id="stage" placeholder="Stage">
         					<input placeholder="Search" template_id="stage">
         					<cc-options fetch-collection="module_activity" filter-name="module_id" filter-value="5e6d79f9d8cdbe53927a0443" template_id="stage" class="overflow:auto">
-        						<cc-option class="template" template_id="stage" value="{{data._id}}">
+        						<cc-option class="template" template_id="stage" value="{{document._id}}">
         							<h3 collection="module_activity" document_id="" name="name">Stage Name</h3>
         						</cc-option>
         					</cc-options>
@@ -93,22 +93,22 @@
         				<cocreate-select sortable class="floating-label" name="team" placeholder="Team" multiple>
         					<input placeholder="Search" template_id="team">
                             <cc-options fetch-collection="users" template_id="team" class="overflow:auto">
-                                <cc-option class="template display:flex margin:5px" template_id="team" value="{{data._id}}">
+                                <cc-option class="template display:flex margin:5px" template_id="team" value="{{document._id}}">
 
                                     <!-- Avatar -->
                                     <div class="avatar-wrapper margin:5px">
                                         <a class="avatar round" target="modal" href="./users/profile.html" modal-width="300px" modal-height="375px"  modal-color="#229954">
-                                            <span collection="users" document_id="{{data._id}}" name="name" class="avatar-name width:1ch letter-spacing:2px overflow:hidden text-transform:uppercase"></span>
+                                            <span collection="users" document_id="{{document._id}}" name="name" class="avatar-name width:1ch letter-spacing:2px overflow:hidden text-transform:uppercase"></span>
                                             <span class="avatar-image">
-                                                <img collection="users" document_id="{{data._id}}" name="avatar" onerror="this.style.display='none'" width="40px"/>
+                                                <img collection="users" document_id="{{document._id}}" name="avatar" onerror="this.style.display='none'" width="40px"/>
                                             </span>
                                         </a>
-                                        <div class="avatar-status" collection="users" document_id="{{data._id}}" user-status='{"name":"status"}'></div>
+                                        <div class="avatar-status" collection="users" document_id="{{document._id}}" user-status='{"name":"status"}'></div>
                                     </div>
 
                                     <div class="avatar-content margin-left:10px">
-                                        <p class="avatar-title" collection="users" document_id="{{data._id}}" name="name">user name</p>
-                                        <p class="avatar-subtitle" collection="users" document_id="{{data._id}}" name="email"></p>
+                                        <p class="avatar-title" collection="users" document_id="{{document._id}}" name="name">user name</p>
+                                        <p class="avatar-subtitle" collection="users" document_id="{{document._id}}" name="email"></p>
                                     </div>
 
                                 </cc-option>
@@ -137,7 +137,7 @@
         					<input placeholder="Search" template_id="status">
     						<div template_id="status" filter-name="type" filter-value="5ff747727005da1c272740ab"></div>
         					<cc-options fetch-collection="tags" filter-name="module_id" filter-value="" template_id="status" pass_id="module_id" class="overflow:auto">
-        						<cc-option class="template" template_id="status" value="{{data._id}}">
+        						<cc-option class="template" template_id="status" value="{{document._id}}">
         							<h3 collection="modules" document_id="" name="name">Status Name</h3>
         						</cc-option>
         					</cc-options>

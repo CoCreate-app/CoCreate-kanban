@@ -47,8 +47,8 @@
 				<input placeholder="Search" template_id="type">
 				<!-- <cc-options fetch-collection="tags" template_id="type" filter-name="module_id" filter-value="62c1e827de9a46c874441b01" class="overflow:auto"> -->
 				<cc-options fetch-collection="tags" template_id="type" filter-name="module_id" filter-value="60eb8361b979b4001744b339" class="overflow:auto">
-					<cc-option class="template" template_id="type" value="{{data._id}}">
-						<h3>{{data.name}}</h3>
+					<cc-option class="template" template_id="type" value="{{document._id}}">
+						<h3>{{document.name}}</h3>
 					</cc-option>
 				</cc-options>
 			</cocreate-select>
@@ -79,25 +79,25 @@
 							<!--<div class="display:flex flex-direction:column height:100% " sortable dnd-group-name="card" fetch-collection="module_activities" filter-name="status" filter-value="{{stage._id}}" filter-operator="$eq"  filter-sort-name="stage-index_position" filter-sort-type="asc" template_id="{{stage._id}}" droppable>-->
 
 								<!-- Card -->
-								<div class="template card position:relative margin-bottom:10px padding:10px background:white" template_id="{{stage._id}}" value="{{data._id}}" document_id="{{data._id}}"  eid="{{data._id}}" draggable>
-									<div id="editblock{{data._id}}" class="position:absolute top:8px right:8px font-size:11px display:none">
+								<div class="template card position:relative margin-bottom:10px padding:10px background:white" template_id="{{stage._id}}" value="{{document._id}}" document_id="{{document._id}}"  eid="{{document._id}}" draggable>
+									<div id="editblock{{document._id}}" class="position:absolute top:8px right:8px font-size:11px display:none">
 										<a target="modal" href="./form.html" modal-width="320px" modal-color="#229954">
 											<i class="fas fa-pencil-alt"></i>
-											<div pass-collection="{{collection}}" pass-document_id="{{data._id}}" pass_to="form-fields"></div>
+											<div pass-collection="{{document.collection}}" pass-document_id="{{document._id}}" pass_to="form-fields"></div>
 											<div pass_id="form" pass-collection="" pass-document_id="" pass-name="" pass_to="render"></div>
-											<div pass-value="{{data.module_id}}" pass-filter-value="{{data.module_id}}" pass_to="module_id"></div>
-											<div pass-document_id="{{data.module_id}}" pass_to="module-form"></div>
+											<div pass-value="{{document.module_id}}" pass-filter-value="{{document.module_id}}" pass_to="module_id"></div>
+											<div pass-document_id="{{document.module_id}}" pass_to="module-form"></div>
 										</a>
 									</div>
 									<div class="width:100%">
-										<img collection="module_activities" document_id="{{data._id}}" name="image" src="https://via.placeholder.com/150" width="100%"></img>
+										<img collection="module_activities" document_id="{{document._id}}" name="image" src="https://via.placeholder.com/150" width="100%"></img>
 									</div>
 									<div class="border-bottom:1px_solid_gray margin:0px_15px">
 										<div class="display:flex margin:10px_0px">
 											<span class="cocreate-badge round badge-danger margin-right:10px font-size:10px padding:0px_20px"></span>
 											<span class="cocreate-badge round margin-right:10px font-size:10px padding:0px_20px"></span>
 										</div>
-										<p collection="{{collection}}" document_id="{{data._id}}" name="name" contenteditable>Card Name</p>
+										<p collection="{{document.collection}}" document_id="{{document._id}}" name="name" contenteditable>Card Name</p>
 										<div class="display:flex margin:10px_0px">
 											<span class="cocreate-badge badge-danger margin-right:10px font-size:14px">
 												<i class="far fa-clock"></i>
