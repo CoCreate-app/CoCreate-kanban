@@ -1,3 +1,10 @@
+## [1.2.65](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.64...v1.2.65) (2022-11-21)
+
+
+### Bug Fixes
+
+* replaced document_id with document._id ([9a5b605](https://github.com/CoCreate-app/CoCreate-kanban/commit/9a5b6053fba2870fe12963e514e354d1bccf8e25))
+
 ## [1.2.64](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.63...v1.2.64) (2022-11-21)
 
 
