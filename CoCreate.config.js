@@ -10,7 +10,7 @@ module.exports = {
             "collection": "files",
             "document_id": "6025f32c7a78a543a77c9220",
             "key": "src",
-            "data":{
+            "document": {
                 "name": "index.html",
                 "path": "/docs/kanban/index.html",
                 "domains": [
