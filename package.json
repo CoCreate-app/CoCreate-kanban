@@ -20,9 +20,7 @@
     "html5-framework",
     "javascript-framework"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
+  "publishConfig": { "access": "public" },
   "scripts": {
     "start": "npx webpack --config webpack.config.js",
     "build": "NODE_ENV=production npx webpack --config webpack.config.js",
@@ -35,9 +33,7 @@
   },
   "author": "CoCreate LLC",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/CoCreate-app/CoCreate-kanban/issues"
-  },
+  "bugs": { "url": "https://github.com/CoCreate-app/CoCreate-kanban/issues" },
   "homepage": "https://cocreate.app/docs/kanban",
   "funding": {
     "type": "GitHub Sponsors ❤",
@@ -58,7 +54,5 @@
     "webpack-cli": "^4.5.0",
     "webpack-log": "^3.0.1"
   },
-  "dependencies": {
-    "@cocreate/docs": "^1.3.17"
-  }
+  "dependencies": { "@cocreate/docs": "^1.3.20" }
 }
