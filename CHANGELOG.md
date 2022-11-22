@@ -1,3 +1,10 @@
+## [1.2.68](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.67...v1.2.68) (2022-11-22)
+
+
+### Bug Fixes
+
+* workflow docs ([a4ef1e6](https://github.com/CoCreate-app/CoCreate-kanban/commit/a4ef1e6179798151ba26349d6bea692080965eea))
+
 ## [1.2.67](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.66...v1.2.67) (2022-11-22)
 
 
