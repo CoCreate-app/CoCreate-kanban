@@ -1,3 +1,10 @@
+## [1.2.67](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.66...v1.2.67) (2022-11-22)
+
+
+### Bug Fixes
+
+* apply src: {{source}} to CoCreate.config ([1715d9d](https://github.com/CoCreate-app/CoCreate-kanban/commit/1715d9d3ad5dbd4cace99b5593b177090c118bc8))
+
 ## [1.2.66](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.65...v1.2.66) (2022-11-21)
 
 
