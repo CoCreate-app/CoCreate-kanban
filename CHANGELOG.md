@@ -1,3 +1,12 @@
+## [1.2.76](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.75...v1.2.76) (2022-12-02)
+
+
+### Bug Fixes
+
+* bump dependencies ([0038c34](https://github.com/CoCreate-app/CoCreate-kanban/commit/0038c3442736ec709ee1bd724b7ca2b80c207243))
+* docs ([45a7513](https://github.com/CoCreate-app/CoCreate-kanban/commit/45a75134e3d6c806853f57699b44308f4601647b))
+* renamed filter-sort-type to filter-sort-direction ([3d4012d](https://github.com/CoCreate-app/CoCreate-kanban/commit/3d4012db6805e630245d4821286dd763c417b135))
+
 ## [1.2.75](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.74...v1.2.75) (2022-11-28)
 
 
