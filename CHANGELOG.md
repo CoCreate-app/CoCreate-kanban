@@ -1,3 +1,10 @@
+## [1.2.77](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.76...v1.2.77) (2022-12-04)
+
+
+### Bug Fixes
+
+* bump dependencies ([36b0c34](https://github.com/CoCreate-app/CoCreate-kanban/commit/36b0c3471971492f4a76fb3a71cb30057bc3b9eb))
+
 ## [1.2.76](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.75...v1.2.76) (2022-12-02)
 
 
