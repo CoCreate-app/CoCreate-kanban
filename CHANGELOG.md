@@ -1,3 +1,10 @@
+## [1.2.86](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.85...v1.2.86) (2022-12-15)
+
+
+### Bug Fixes
+
+* add missing dev dependency style-loader ([747ce2b](https://github.com/CoCreate-app/CoCreate-kanban/commit/747ce2b588afce24aadd3d8157fa81f505a53a71))
+
 ## [1.2.85](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.84...v1.2.85) (2022-12-15)
 
 
