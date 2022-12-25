@@ -1,3 +1,12 @@
+## [1.2.93](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.92...v1.2.93) (2022-12-25)
+
+
+### Bug Fixes
+
+* bump dependencies ([27347a0](https://github.com/CoCreate-app/CoCreate-kanban/commit/27347a055c642b9db7f36471939e3ce002534056))
+* bumpcdn to 1.34.4 ([ee7fdb7](https://github.com/CoCreate-app/CoCreate-kanban/commit/ee7fdb74c1173f999329f7ceffd0e1187ca08f5b))
+* type="modal" and pass_to updated to action="pass, openModal" ([5addaf3](https://github.com/CoCreate-app/CoCreate-kanban/commit/5addaf31afca50fc068a2d995d5fbb120a14e0e6))
+
 ## [1.2.92](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.91...v1.2.92) (2022-12-23)
 
 
