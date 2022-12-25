@@ -81,7 +81,7 @@
 								<!-- Card -->
 								<div class="template card position:relative margin-bottom:10px padding:10px background:white" template_id="{{stage._id}}" value="{{document._id}}" document_id="{{document._id}}"  eid="{{document._id}}" draggable>
 									<div id="editblock{{document._id}}" class="position:absolute top:8px right:8px font-size:11px display:none">
-										<a target="modal" href="./form.html" modal-width="320px" modal-color="#229954">
+										<a actions="pass, openModal" href="./form.html" modal-width="320px" modal-color="#229954">
 											<i class="fas fa-pencil-alt"></i>
 											<div pass-collection="{{document.collection}}" pass-document_id="{{document._id}}" pass_to="form-fields"></div>
 											<div pass_id="form" pass-collection="" pass-document_id="" pass-name="" pass_to="render"></div>
@@ -112,7 +112,7 @@
 
 											<!-- Avatar -->
 											<div class="avatar-wrapper margin:5px_0px margin-right:10px">
-												<a class="avatar round" target="modal" href="render.html" pass-collection="modules" pass-prefix="" pass-module_id="5dd010bccbc25f0cdb1a4d9f" pass_to="render" modal-width="300px" modal-height="375px" modal-color="#229954">
+												<a class="avatar round" actions="pass, openModal" href="render.html" pass-collection="modules" pass-prefix="" pass-module_id="5dd010bccbc25f0cdb1a4d9f" pass_to="render" modal-width="300px" modal-height="375px" modal-color="#229954">
 													<span collection="users" document_id="" name="name" class="sessionUser_Id first-letter avatar-name">B</span>
 													<span collection="users" document_id="" name="profile_image" class="sessionUser_Id avatar-image">
 													  <img src="/_static/Velazquez.jpg" onerror="this.style.display='none'"/>
