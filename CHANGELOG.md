@@ -1,3 +1,11 @@
+## [1.2.95](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.94...v1.2.95) (2022-12-27)
+
+
+### Bug Fixes
+
+* bump dependencies ([9dac6d8](https://github.com/CoCreate-app/CoCreate-kanban/commit/9dac6d84fb734c7e0403b175e4e09ad8ddb0eda0))
+* modal href updated to modal-src ([5ad4f07](https://github.com/CoCreate-app/CoCreate-kanban/commit/5ad4f07257a316f6cd7c97507b2cee1f9f6d2e0e))
+
 ## [1.2.94](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.93...v1.2.94) (2022-12-25)
 
 
