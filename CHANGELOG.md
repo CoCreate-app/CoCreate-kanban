@@ -1,3 +1,11 @@
+## [1.2.99](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.98...v1.2.99) (2023-01-01)
+
+
+### Bug Fixes
+
+* bump cdn to 1.37.1 ([fdc6149](https://github.com/CoCreate-app/CoCreate-kanban/commit/fdc6149f273d0d87ea679d5a1b49773dee3c18c9))
+* docs sanbox overflow ([97ed633](https://github.com/CoCreate-app/CoCreate-kanban/commit/97ed633c4e56190b12f54be3e0c5001a8dec7451))
+
 ## [1.2.98](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.97...v1.2.98) (2022-12-31)
 
 
