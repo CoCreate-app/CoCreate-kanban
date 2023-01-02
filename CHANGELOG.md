@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.99...v1.3.0) (2023-01-02)
+
+
+### Features
+
+* class="template" template_id="id" replaced with template="id" ([136c35a](https://github.com/CoCreate-app/CoCreate-kanban/commit/136c35af698210df546f19e915d12c6a4daac582))
+
 ## [1.2.99](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.98...v1.2.99) (2023-01-01)
 
 
