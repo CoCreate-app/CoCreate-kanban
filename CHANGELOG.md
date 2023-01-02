@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.3.0...v1.3.1) (2023-01-02)
+
+
+### Bug Fixes
+
+* bump cdn to 1.39.0 ([d2afcab](https://github.com/CoCreate-app/CoCreate-kanban/commit/d2afcab4883ba37099d609be4fc53a9c78ad7b07))
+
 # [1.3.0](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.2.99...v1.3.0) (2023-01-02)
 
 
