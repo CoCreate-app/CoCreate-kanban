@@ -80,7 +80,7 @@
         				<cocreate-select sortable class="floating-label" name="stage" document_id="stage" placeholder="Stage">
         					<input placeholder="Search" template_id="stage">
         					<cc-options fetch-collection="module_activity" filter-name="module_id" filter-value="5e6d79f9d8cdbe53927a0443" template_id="stage" class="overflow:auto">
-        						<cc-option class="template" template_id="stage" value="{{document._id}}">
+        						<cc-option template="stage" value="{{document._id}}">
         							<h3 collection="module_activity" document_id="" name="name">Stage Name</h3>
         						</cc-option>
         					</cc-options>
@@ -93,7 +93,7 @@
         				<cocreate-select sortable class="floating-label" name="team" placeholder="Team" multiple>
         					<input placeholder="Search" template_id="team">
                             <cc-options fetch-collection="users" template_id="team" class="overflow:auto">
-                                <cc-option class="template display:flex margin:5px" template_id="team" value="{{document._id}}">
+                                <cc-option class="display:flex margin:5px" template="team" value="{{document._id}}">
 
                                     <!-- Avatar -->
                                     <div class="avatar-wrapper margin:5px">
@@ -137,7 +137,7 @@
         					<input placeholder="Search" template_id="status">
     						<div template_id="status" filter-name="type" filter-value="5ff747727005da1c272740ab"></div>
         					<cc-options fetch-collection="tags" filter-name="module_id" filter-value="" template_id="status" pass_id="module_id" class="overflow:auto">
-        						<cc-option class="template" template_id="status" value="{{document._id}}">
+        						<cc-option template="status" value="{{document._id}}">
         							<h3 collection="modules" document_id="" name="name">Status Name</h3>
         						</cc-option>
         					</cc-options>
@@ -234,6 +234,6 @@
         </main>
     </body>
 
-	<script src="https://cdn.cocreate.app/1.38.0/CoCreate.min.js" ></script>
+	<script src="https://cdn.cocreate.app/1.38.1/CoCreate.min.js" ></script>
 
 </html>
