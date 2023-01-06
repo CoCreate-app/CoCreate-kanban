@@ -1,3 +1,12 @@
+## [1.3.3](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.3.2...v1.3.3) (2023-01-06)
+
+
+### Bug Fixes
+
+* bump cdn to 1.41.1 ([36fd222](https://github.com/CoCreate-app/CoCreate-kanban/commit/36fd2227197991fb7d13a99d7559ec866cdb2139))
+* bump dependencies, worklow [@v3](https://github.com/v3) ([95d9ad2](https://github.com/CoCreate-app/CoCreate-kanban/commit/95d9ad21f594e8fe51e8af359cbdd02823215941))
+* edit in github btn styles ([775e4a0](https://github.com/CoCreate-app/CoCreate-kanban/commit/775e4a0630382b1a9f6db7c84dd00384b4db95ae))
+
 ## [1.3.2](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.3.1...v1.3.2) (2023-01-05)
 
 
