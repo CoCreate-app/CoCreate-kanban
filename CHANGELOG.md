@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.4.0...v1.4.1) (2023-01-09)
+
+
+### Bug Fixes
+
+* removed form.html ([e1f9c15](https://github.com/CoCreate-app/CoCreate-kanban/commit/e1f9c15b95ff795758e59a03470bfbd0c8f27b7d))
+
 # [1.4.0](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.3.3...v1.4.0) (2023-01-09)
 
 
