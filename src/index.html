@@ -1,164 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="icon" href="https://cdn.cocreate.app/favicon.ico" type="image/ico" sizes="16x16" parse="true">
-		<title>Kanban | CoCreate</title>
-	</head>
-	
-	<style type="text/css">
-		#board{height: calc(100vh - 50px)}
-		.card-container{height: calc(100vh - 170px)}
-		.template{display:none}
-	</style>
-	
-	<body>
-		<div id="modal-viewport" hidden></div>
-		<div class="nav display:flex align-items:center background:whitesmoke" content_id="content" scroll-effect="hide-nav" scroll-up="1" scroll-down="1">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="https://cdn.cocreate.app/favicon.ico" type="image/ico" sizes="16x16" parse="true">
+        <title>Kanban | CoCreate</title>
+        <link rel="stylesheet" type="text/css" href="https://cdn.cocreate.app/latest/CoCreate.min.css">
 
-			<!-- Horizontal Scroll Nav/Tabs -->
-			<ul class="overflow:auto display:inline-flex direction:rtl font-size:20px align-items:center list-style-type:none width:100% height:50px">
-
-				<!-- Modal Controls -->
-				<li class="margin-right:15px">
-					<a actions="closeModal"><i class="fas fa-times"></i></a>
-				</li>
-				<li class="margin-right:15px">
-					<a actions="minMaxModal"><i toggle="fa-window-restore, fa-window-maximize" class="far fa-window-maximize"></i></a>
-				</li>
-				<li class="margin-right:15px">
-					<a actions="parkModal"><i class="far fa-window-minimize"></i></a>
-				</li>
-
-				<!-- fullscreen toogle and icon transform-->
-				<li class="margin-right:15px"><a fullscreen><i toggle="fa-compress, fa-expand" class="fas fa-expand"></i></a></li>
-
-				<!-- delete document-->
-				<li class="margin-right:15px">
-					<a actions="deleteDocuments" collection="" pass_id="datatable" template_id="datatable"><i class="far fa-trash-alt"></i></a>
-				</li>
-			</ul>
-		</div>
-		<div content_id="content">
-			<cocreate-select name="kanban-filter" pass_id="module-form" placeholder="Type" set-value=".columns" set-value-key="typeid" class="floating-label">
-				<input placeholder="Search" template_id="type">
-				<!-- <cc-options fetch-collection="tags" template_id="type" filter-name="module_id" filter-value="62c1e827de9a46c874441b01" class="overflow:auto"> -->
-				<cc-options fetch-collection="tags" template_id="type" filter-name="module_id" filter-value="60eb8361b979b4001744b339" class="overflow:auto">
-					<cc-option template="type" value="{{document._id}}">
-						<h3>{{document.name}}</h3>
-					</cc-option>
-				</cc-options>
-			</cocreate-select>
-
-			<div id="board" class="display:flex overflow:auto">
-				<div filter-name="module_id" filter-value="" filter-operator="$eq" template_id="columns" pass_id="module_id"></div>
-				<div filter-sort-name="stage_position" filter-sort-direction="asc" filter-value-type="number" template_id="columns" pass_id="module_id"></div>
-				<div id="columns" class="display:flex flex-wrap:nowrap flex-direction:row columns" dnd-group-name="stage" fetch-collection="tags" filter-name="type" filter-value="{{typeid}}" filter-operator="$eq" template_id="columns" render_id="stage" droppable>
-
-					<!-- Column -->
-					<div class="box-shadow-200 position:relative margin:10px background:whitesmoke width:300px" template="columns" eid="{{stage._id}}" document_id="{{stage._id}}" draggable>
-						<div class="box-shadow-bottom position:sticky top:0 padding:15px font-size:18px z-index:1">
-							<span class="display:inline-block">
-							  	<p collection="{{stage.collection}}" document_id="{{stage._id}}" name="name" contenteditable draggable="false"></p>
-							</span>
-							<span class="float:right display:inline-block">
-				  				<a actions="deleteDocument" collection="{{stage.collection}}" document_id="{{stage._id}}">
-				  					<i class="fas fa-times"></i>
-				  				</a>
-							</span>
-						</div>
-						<div class="card-container padding:10px overflow:auto z-index:0">
-
-							<div filter-name="module_id" filter-value="" filter-operator="$eq" template_id="{{stage._id}}" pass_id="module_id"></div>
-							<div filter-sort-name="stage-index_position" filter-sort-direction="asc" filter-value-type="number" template_id="{{stage._id}}"></div>
-
-							<div class="display:flex flex-direction:column height:100% " sortable dnd-group-name="card" fetch-collection="module_activities" fetch-for="lowercase" filter-name='{ "collection":"tags", "document_id":"{{typeid}}", "name":"name" }' filter-value="{{stage._id}}" filter-operator="$eq" template_id="{{stage._id}}" droppable>
-							<!--<div class="display:flex flex-direction:column height:100% " sortable dnd-group-name="card" fetch-collection="module_activities" filter-name="status" filter-value="{{stage._id}}" filter-operator="$eq"  filter-sort-name="stage-index_position" filter-sort-direction="asc" template_id="{{stage._id}}" droppable>-->
-
-								<!-- Card -->
-								<div class="card position:relative margin-bottom:10px padding:10px background:white" template="{{stage._id}}" value="{{document._id}}" document_id="{{document._id}}"  eid="{{document._id}}" draggable>
-									<div id="editblock{{document._id}}" class="position:absolute top:8px right:8px font-size:11px display:none">
-										<a actions="pass, openModal" modal-src="./form.html" modal-width="320px" modal-color="#229954">
-											<i class="fas fa-pencil-alt"></i>
-											<div pass-collection="{{document.collection}}" pass-document_id="{{document._id}}" pass_to="form-fields"></div>
-											<div pass_id="form" pass-collection="" pass-document_id="" pass-name="" pass_to="render"></div>
-											<div pass-value="{{document.module_id}}" pass-filter-value="{{document.module_id}}" pass_to="module_id"></div>
-											<div pass-document_id="{{document.module_id}}" pass_to="module-form"></div>
-										</a>
-									</div>
-									<div class="width:100%">
-										<img collection="module_activities" document_id="{{document._id}}" name="image" src="https://via.placeholder.com/150" width="100%"></img>
-									</div>
-									<div class="border-bottom:1px_solid_gray margin:0px_15px">
-										<div class="display:flex margin:10px_0px">
-											<span class="cocreate-badge round badge-danger margin-right:10px font-size:10px padding:0px_20px"></span>
-											<span class="cocreate-badge round margin-right:10px font-size:10px padding:0px_20px"></span>
-										</div>
-										<p collection="{{document.collection}}" document_id="{{document._id}}" name="name" contenteditable>Card Name</p>
-										<div class="display:flex margin:10px_0px">
-											<span class="cocreate-badge badge-danger margin-right:10px font-size:14px">
-												<i class="far fa-clock"></i>
-												<span>Aug 29th 17</span>
-											</span>
-											<span class="cocreate-badge margin-right:10px font-size:14px">
-												<i class="far fa-check-circle"></i>
-												<span>2/7</span>
-											</span>
-										</div>
-										<div class="display:flex">
-
-											<!-- Avatar -->
-											<div class="avatar-wrapper margin:5px_0px margin-right:10px">
-												<a class="avatar round" actions="pass, openModal" modal-src="render.html" pass-collection="modules" pass-document_id="5dd010bccbc25f0cdb1a4d9f" pass_to="render" modal-width="300px" modal-height="375px" modal-color="#229954">
-													<span collection="users" document_id="" name="name" class="sessionUser_Id first-letter avatar-name">B</span>
-													<span collection="users" document_id="" name="profile_image" class="sessionUser_Id avatar-image">
-													  <img src="/_static/Velazquez.jpg" onerror="this.style.display='none'"/>
-													</span>
-												</a>
-												<div class="avatar-status off"></div>
-											</div>
-
-										</div>
-									</div>
-									<div class="display:flex margin:15px">
-										<span class="float:left"><i class="fas fa-eye"></i></span>
-										<div class="display:flex float:right">
-											<span class="margin-left:10px"><i class="far fa-sticky-note"></i><span>0</span></span>
-											<span class="margin-left:10px"><i class="far fa-envelope"></i><span>8</span></span>
-										</div>
-									</div>
-								</div>
-								
-							</div>
-						</div>
-						<div class="box-shadow-top position:absolute width:100% padding:15px" draggable="false">
-							<form collection="module_activities" document_id="">
-								<input type="hidden" document_id="" name="module_id" value="{{stage.module_id}}" pass_id="module_id"/>
-								<input type="hidden" document_id="" fetch-for="lowercase" name='{ "collection":"tags", "document_id":"{{typeid}}", "name":"name" }'  value="{{stage._id}}" />
-								<a actions="save, reset"><i class="fas fa-plus"></i> New Card</a>
-							</form>
-						</div>
-					</div>
-
-				</div>
-			</div>
-
-			<form collection="tags"  document_id="">
-				<input type="hidden" name="name" value="untitled"/>
-				<input type="hidden" name="module_id" value="60e73c8eb979b40017448c1b" pass_id="module_id"/>
-				<input type="hidden" name="type" value="60eb93a2b979b4001744b445"/>
-				<button class="position:fixed bottom:15px right:15px background:dodgerblue border-radius:50% grow-hover" actions="save, reset">
-				  <i class="fas fa-plus"></i>
-				</button>
-			</form>
-
-		</div>
-
-		<script src="https://cdn.cocreate.app/1.41.1/CoCreate.min.js" ></script>
+    </head>
         
-	</body>
+    <body>
+
+        <main class="padding:10px" content_id="content">
+            
+            <div id="board" class="display:flex overflow:auto ">
+
+                <div fetch-collection="testtags" fetch-document filter-sort-name="position" template_id="column" render_id="column" droppable dnd-group-name="column"  class="display:flex flex-wrap:nowrap flex-direction:row">
+
+                    <!-- Column -->
+                    <div template="column" document_id="{{column._id}}" draggable class="position:relative width:300px margin:10px background:whitesmoke height:calc(100vh_-_45px)">
+                        <div class="display:flex margin:15px font-size:18px color-dark-gray">
+                            <div class="flex-grow:1">
+                                <span collection="{{column.collection}}" document_id="{{column._id}}" name="name" contenteditable class="padding:5px"></span>
+                            </div>
+                            <div>
+                                <a actions="deleteDocument" collection="{{column.collection}}" document_id="{{column._id}}"><i class="fas fa-times"></i></a>
+                            </div>
+                        </div>
+                        <div class="height:calc(100vh_-_145px) padding:10px overflow:auto">
+
+                            <div fetch-collection="testcontacts" filter-name="tags" filter-value="{{column._id}}" filter-operator="$eq" filter-sort-name="position" filter-sort-direction="asc" template_id="{{column._id}}" droppable dnd-group-name="card" class="display:flex flex-direction:column height:100%">
+
+                                <!-- Card -->
+                                <div class="card position:relative margin-bottom:10px padding:10px background:white" template="{{column._id}}" value="{{document._id}}" document_id="{{document._id}}" draggable>
+                                    <a actions="deleteDocument" collection="{{document.collection}}" document_id="{{document._id}}" class="position:absolute right:15px top:15px"><i class="fas fa-times"></i></a>
+
+                                    <div class="width:100%">
+                                        <img collection="{{document.collection}}" document_id="{{document._id}}" name="image" src="https://via.placeholder.com/150" width="100%"></img>
+                                    </div>
+                                    <div class="border-bottom:1px_solid_gray margin:0px_15px">
+                                        <div class="display:flex margin:10px_0px">
+                                            <span class="cocreate-badge margin-right:10px font-size:10px padding:0px_20px"></span>
+                                            <span class="cocreate-badge margin-right:10px font-size:10px padding:0px_20px"></span>
+                                        </div>
+                                        <p collection="{{document.collection}}" document_id="{{document._id}}" name="name" contenteditable class="padding:5px"></p>
+                                        <div class="display:flex margin:10px_0px">
+                                            <span class="cocreate-badge badge-danger margin-right:10px font-size:14px">
+                                                <i class="far fa-clock"></i>
+                                                <span>Aug 29th 17</span>
+                                            </span>
+                                            <span class="cocreate-badge margin-right:10px font-size:14px">
+                                                <i class="far fa-check-circle"></i>
+                                                <span>2/7</span>
+                                            </span>
+                                        </div>
+                                        <div class="display:flex">
+
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="display:flex margin:15px">
+                                        <span class="float:left"><i class="fas fa-eye"></i></span>
+                                        <div class="display:flex float:right">
+                                            <span class="margin-left:10px"><i class="far fa-sticky-note"></i><span>0</span></span>
+                                            <span class="margin-left:10px"><i class="far fa-envelope"></i><span>8</span></span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="position:absolute bottom:0 margin:0px_15px padding:15px_0px">
+                            <form>
+                                <input type="hidden" collection="testcontacts" document_id="" name="tags" value="{{column._id}}" />
+                                <input type="hidden" collection="testcontacts" document_id="" name="name" value="untitled" />
+                                <a actions="save, reset"><i class="fas fa-plus"></i> New Card</a>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <form>
+                <input type="hidden" pass_id="module_id" collection="testtags" document_id="" name="name" value="untitled">
+                <button actions="save, reset" class="position:fixed bottom:15px right:15px line-height:50px width:50px background:dodgerblue color:#fff font-size:1.5rem grow-hover border-radius:50% border-width:0 box-shadow:0px_2px_10px_0px_rgba(0,_0,_0,_0.4)">
+                    <i class="fas fa-plus"></i>
+                </button>
+            </form>
+
+        </main>
+
+        <script src="../../../../CoCreateJS/dist/CoCreate.js"></script>
+            
+    </body>
 
 </html>
