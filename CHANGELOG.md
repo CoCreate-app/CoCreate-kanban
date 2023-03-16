@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.4.8...v1.5.0) (2023-03-16)
+
+
+### Features
+
+* replaced get-value and set-value with a super charged version of CoCreate-events ([83ed30c](https://github.com/CoCreate-app/CoCreate-kanban/commit/83ed30c57c4eec4e263267704e2fa3b9139cd922))
+
 ## [1.4.8](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.4.7...v1.4.8) (2023-02-01)
 
 
