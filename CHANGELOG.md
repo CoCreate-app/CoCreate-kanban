@@ -1,3 +1,10 @@
+## [1.5.4](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.5.3...v1.5.4) (2023-04-11)
+
+
+### Bug Fixes
+
+* renamed domains to hosts ([0b77658](https://github.com/CoCreate-app/CoCreate-kanban/commit/0b77658f88d364ffe589a5f54b4c1f00ea830c4c))
+
 ## [1.5.3](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.5.2...v1.5.3) (2023-03-30)
 
 
