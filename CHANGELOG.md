@@ -1,3 +1,11 @@
+## [1.6.3](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.6.2...v1.6.3) (2023-04-24)
+
+
+### Bug Fixes
+
+* updated worrkflows to v3 and node version 16 ([02c45ba](https://github.com/CoCreate-app/CoCreate-kanban/commit/02c45baa40be1a8c9c88f4702c88e46be3ab13e6))
+* workflow node version updated  16 ([efc11af](https://github.com/CoCreate-app/CoCreate-kanban/commit/efc11afbcae4037e4537bffefe13b68388771bbd))
+
 ## [1.6.2](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.6.1...v1.6.2) (2023-04-24)
 
 
