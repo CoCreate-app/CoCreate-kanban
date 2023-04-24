@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.6.0...v1.6.1) (2023-04-24)
+
+
+### Bug Fixes
+
+* removed uglifyjs-webpack-plugin ([7f66030](https://github.com/CoCreate-app/CoCreate-kanban/commit/7f66030a5e7cf60059c0165222255172d94b50fb))
+
 # [1.6.0](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.5.6...v1.6.0) (2023-04-24)
 
 
