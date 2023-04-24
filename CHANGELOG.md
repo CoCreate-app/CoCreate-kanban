@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.5.6...v1.6.0) (2023-04-24)
+
+
+### Features
+
+* added pwa manifest ([e6af8c2](https://github.com/CoCreate-app/CoCreate-kanban/commit/e6af8c2ef5712a034b96f5ab5286d6972f0d88d2))
+
 ## [1.5.6](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.5.5...v1.5.6) (2023-04-11)
 
 
