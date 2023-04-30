@@ -1,3 +1,12 @@
+## [1.6.4](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.6.3...v1.6.4) (2023-04-30)
+
+
+### Bug Fixes
+
+* fullscreen target updated to fullscreen fullscreen-target ([1e3cf13](https://github.com/CoCreate-app/CoCreate-kanban/commit/1e3cf13fbd99c632ee50c1bdd190d2e6243f88aa))
+* package-lock.json and pnpm-lock.yaml added to .gitignore ([169a93d](https://github.com/CoCreate-app/CoCreate-kanban/commit/169a93db0c4fae7271f009b65ec482c18ac6b7b3))
+* removed toogle fullscreen icons. now using css content ([bfbdd34](https://github.com/CoCreate-app/CoCreate-kanban/commit/bfbdd348b798f94c17198614a11e2a017554baaa))
+
 ## [1.6.3](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.6.2...v1.6.3) (2023-04-24)
 
 
