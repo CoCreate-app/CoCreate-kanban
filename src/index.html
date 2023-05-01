@@ -27,7 +27,7 @@
                                 <span collection="{{column.collection}}" document_id="{{column._id}}" name="name" contenteditable class="padding:5px"></span>
                             </div>
                             <div>
-                                <a actions="deleteDocument" collection="{{column.collection}}" document_id="{{column._id}}"><i class="fas fa-times"></i></a>
+                                <a actions="deleteDocument" collection="{{column.collection}}" document_id="{{column._id}}"><i class="height:18px fill:#505050" src="/assets/svg/times.svg"></i></a>
                             </div>
                         </div>
                         <div class="height:calc(100vh_-_145px) padding:10px overflow:auto">
@@ -36,7 +36,7 @@
 
                                 <!-- Card -->
                                 <div class="card position:relative margin-bottom:10px padding:10px background:white" template="{{column._id}}" value="{{document._id}}" document_id="{{document._id}}" draggable>
-                                    <a actions="deleteDocument" collection="{{document.collection}}" document_id="{{document._id}}" class="position:absolute right:15px top:15px"><i class="fas fa-times"></i></a>
+                                    <a actions="deleteDocument" collection="{{document.collection}}" document_id="{{document._id}}" class="position:absolute right:15px top:15px"><i class="height:18px fill:#505050" src="/assets/svg/times.svg"></i></a>
 
                                     <div class="width:100%">
                                         <img collection="{{document.collection}}" document_id="{{document._id}}" name="image" src="https://via.placeholder.com/150" width="100%"></img>
@@ -49,11 +49,11 @@
                                         <p collection="{{document.collection}}" document_id="{{document._id}}" name="name" contenteditable class="padding:5px"></p>
                                         <div class="display:flex margin:10px_0px">
                                             <span class="cocreate-badge badge-danger margin-right:10px font-size:14px">
-                                                <i class="far fa-clock"></i>
+                                                <i class="height:16px fill:#505050" src="/assets/svg/clock.svg"></i>
                                                 <span>Aug 29th 17</span>
                                             </span>
                                             <span class="cocreate-badge margin-right:10px font-size:14px">
-                                                <i class="far fa-check-circle"></i>
+                                                <i class="height:16px fill:#505050" src="/assets/svg/check-circle.svg"></i>
                                                 <span>2/7</span>
                                             </span>
                                         </div>
@@ -63,10 +63,10 @@
                                         </div>
                                     </div>
                                     <div class="display:flex margin:15px">
-                                        <span class="float:left"><i class="fas fa-eye"></i></span>
+                                        <span class="float:left"><i class="height:16px fill:#505050" src="/assets/svg/eye.svg"></i></span>
                                         <div class="display:flex float:right">
-                                            <span class="margin-left:10px"><i class="far fa-sticky-note"></i><span>0</span></span>
-                                            <span class="margin-left:10px"><i class="far fa-envelope"></i><span>8</span></span>
+                                            <span class="margin-left:10px"><i class="height:16px fill:#505050" src="/assets/svg/sticky-note.svg"></i><span>0</span></span>
+                                            <span class="margin-left:10px"><i class="height:16px fill:#505050" src="/assets/svg/envelope.svg"></i><span>8</span></span>
                                         </div>
                                     </div>
 
@@ -77,7 +77,7 @@
                             <form>
                                 <input type="hidden" collection="testcontacts" document_id="" name="tags" value="{{column._id}}" />
                                 <input type="hidden" collection="testcontacts" document_id="" name="name" value="untitled" />
-                                <a actions="save, reset"><i class="fas fa-plus"></i> New Card</a>
+                                <a actions="save, reset"><i class="height:16px fill:#505050" src="/assets/svg/plus.svg"></i> New Card</a>
                             </form>
                         </div>
                     </div>
@@ -88,7 +88,7 @@
             <form>
                 <input type="hidden" pass_id="module_id" collection="testtags" document_id="" name="name" value="untitled">
                 <button actions="save, reset" class="position:fixed bottom:15px right:15px line-height:50px width:50px background:dodgerblue color:#fff font-size:1.5rem grow-hover border-radius:50% border-width:0 box-shadow:0px_2px_10px_0px_rgba(0,_0,_0,_0.4)">
-                    <i class="fas fa-plus"></i>
+                    <i class="height:16px fill:#505050" src="/assets/svg/plus.svg"></i>
                 </button>
             </form>
 
