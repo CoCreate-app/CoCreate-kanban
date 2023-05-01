@@ -1,3 +1,10 @@
+## [1.6.6](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.6.5...v1.6.6) (2023-05-01)
+
+
+### Bug Fixes
+
+* update manifest.json to manifest.webmanifest ([73d57a9](https://github.com/CoCreate-app/CoCreate-kanban/commit/73d57a9aaae3aa08247711b0e1b9bf3a8b721b38))
+
 ## [1.6.5](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.6.4...v1.6.5) (2023-05-01)
 
 
