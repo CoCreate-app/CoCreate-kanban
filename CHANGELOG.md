@@ -1,3 +1,10 @@
+## [1.6.5](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.6.4...v1.6.5) (2023-05-01)
+
+
+### Bug Fixes
+
+* replace fontawesome with svg ([2ea74bb](https://github.com/CoCreate-app/CoCreate-kanban/commit/2ea74bba5d4d945509d7e6091627d0b10e88b6a8))
+
 ## [1.6.4](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.6.3...v1.6.4) (2023-04-30)
 
 
