@@ -1,3 +1,10 @@
+## [1.6.8](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.6.7...v1.6.8) (2023-05-10)
+
+
+### Bug Fixes
+
+* apikey renamed to key ([a77e962](https://github.com/CoCreate-app/CoCreate-kanban/commit/a77e962f16917d22bbac65f4c6362237e6332628))
+
 ## [1.6.7](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.6.6...v1.6.7) (2023-05-06)
 
 
