@@ -1,3 +1,10 @@
+## [1.6.9](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.6.8...v1.6.9) (2023-05-19)
+
+
+### Bug Fixes
+
+* update packages to latest version. This commit updates various packages in the dependencies section of the package.json file to their latest published versions, thereby fixing multiple bugs and improving overall performance. ([d005bfb](https://github.com/CoCreate-app/CoCreate-kanban/commit/d005bfbc2901f8cd4f110fb8fc5d58c11d18eea7))
+
 ## [1.6.8](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.6.7...v1.6.8) (2023-05-10)
 
 
