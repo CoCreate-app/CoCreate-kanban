@@ -1,3 +1,11 @@
+## [1.6.12](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.6.11...v1.6.12) (2023-06-04)
+
+
+### Bug Fixes
+
+* replaced secert GITHUB_TOKEN with GITHUB ([0b40f06](https://github.com/CoCreate-app/CoCreate-kanban/commit/0b40f0600dcd37c8f22f23a2dbed4e895fd64d28))
+* Update dependencies versions for [@cocreate](https://github.com/cocreate) libraries ([fc1f351](https://github.com/CoCreate-app/CoCreate-kanban/commit/fc1f351c262d40a03cac26167c546c8d62846d0d))
+
 ## [1.6.11](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.6.10...v1.6.11) (2023-06-04)
 
 
