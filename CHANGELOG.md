@@ -1,3 +1,10 @@
+## [1.6.13](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.6.12...v1.6.13) (2023-06-04)
+
+
+### Bug Fixes
+
+* Refactor CoCreate.config.js to remove hard-coded credentials ([ed50437](https://github.com/CoCreate-app/CoCreate-kanban/commit/ed50437746a3587b3cf633d3a92d7ab153c34adb))
+
 ## [1.6.12](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.6.11...v1.6.12) (2023-06-04)
 
 
