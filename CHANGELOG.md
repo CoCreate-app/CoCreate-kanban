@@ -1,3 +1,10 @@
+## [1.6.11](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.6.10...v1.6.11) (2023-06-04)
+
+
+### Bug Fixes
+
+* **semantic-release:** worklow error solved by running node version 14 ([0a98096](https://github.com/CoCreate-app/CoCreate-kanban/commit/0a980966d1689c37f37ad596873e87fdae5d2b4f))
+
 ## [1.6.10](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.6.9...v1.6.10) (2023-05-21)
 
 
