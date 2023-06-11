@@ -1,3 +1,10 @@
+## [1.6.22](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.6.21...v1.6.22) (2023-06-11)
+
+
+### Bug Fixes
+
+* testing workflow ([d33bdfd](https://github.com/CoCreate-app/CoCreate-kanban/commit/d33bdfd00a9130b2b1c9b5f49ba53b2b0f3283b2))
+
 ## [1.6.21](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.6.20...v1.6.21) (2023-06-11)
 
 
