@@ -1,3 +1,10 @@
+## [1.6.18](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.6.17...v1.6.18) (2023-06-11)
+
+
+### Bug Fixes
+
+* postintall error ([fbaaed8](https://github.com/CoCreate-app/CoCreate-kanban/commit/fbaaed8903ac0eb847c2fcf476b08b8f77f14547))
+
 ## [1.6.17](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.6.16...v1.6.17) (2023-06-11)
 
 
