@@ -1,3 +1,10 @@
+## [1.6.15](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.6.14...v1.6.15) (2023-06-11)
+
+
+### Bug Fixes
+
+* renamed hosts to host. the value can be a string or an array of strings ([9b33658](https://github.com/CoCreate-app/CoCreate-kanban/commit/9b33658a80b4d94a730b8da14b2eb811ab4b4144))
+
 ## [1.6.14](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.6.13...v1.6.14) (2023-06-10)
 
 
