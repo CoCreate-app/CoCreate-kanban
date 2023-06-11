@@ -1,3 +1,10 @@
+## [1.6.17](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.6.16...v1.6.17) (2023-06-11)
+
+
+### Bug Fixes
+
+* @cocreate/cli moved to dependencies ([dea7235](https://github.com/CoCreate-app/CoCreate-kanban/commit/dea7235d31734926c344f11a22db528ca70b22b4))
+
 ## [1.6.16](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.6.15...v1.6.16) (2023-06-11)
 
 
