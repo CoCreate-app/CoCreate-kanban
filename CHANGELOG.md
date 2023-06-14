@@ -1,3 +1,10 @@
+## [1.6.26](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.6.25...v1.6.26) (2023-06-14)
+
+
+### Bug Fixes
+
+* Update dependencies versions for [@cocreate](https://github.com/cocreate) libraries ([32974f8](https://github.com/CoCreate-app/CoCreate-kanban/commit/32974f84f71741250d79c5d9b5f308f6ffd25926))
+
 ## [1.6.25](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.6.24...v1.6.25) (2023-06-11)
 
 
