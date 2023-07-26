@@ -23,17 +23,18 @@
         <main class="padding:10px" content_id="content">
             <div id="board" class="display:flex overflow:auto">
                 <div
-                    fetch-collection="testtags"
-                    fetch-document
+                    collection="testtags"
+                    document
                     filter-sort-name="position"
-                    template_id="column"
                     render_id="column"
                     droppable
                     dnd-group-name="column"
+                    render-selector=":last-child"
                     class="display:flex flex-wrap:nowrap flex-direction:row">
                     <!-- Column -->
                     <div
-                        template="column"
+                        template
+                        render-as="column"
                         document_id="{{column._id}}"
                         draggable
                         class="position:relative width:300px margin:10px background:whitesmoke height:calc(100vh_-_45px)">
@@ -49,7 +50,7 @@
                             </div>
                             <div>
                                 <a
-                                    actions="deleteDocument"
+                                    actions="deletedocument="
                                     collection="{{column.collection}}"
                                     document_id="{{column._id}}"
                                     ><i
@@ -61,25 +62,25 @@
                         <div
                             class="height:calc(100vh_-_145px) padding:10px overflow:auto">
                             <div
-                                fetch-collection="testcontacts"
+                                collection="testcontacts"
                                 filter-name="tags"
                                 filter-value="{{column._id}}"
                                 filter-operator="$eq"
                                 filter-sort-name="position"
                                 filter-sort-direction="asc"
-                                template_id="{{column._id}}"
+                                render-selector=":last-child"
                                 droppable
                                 dnd-group-name="card"
                                 class="display:flex flex-direction:column height:100%">
                                 <!-- Card -->
                                 <div
                                     class="card position:relative margin-bottom:10px padding:10px background:white"
-                                    template="{{column._id}}"
+                                    template
                                     value="{{document._id}}"
                                     document_id="{{document._id}}"
                                     draggable>
                                     <a
-                                        actions="deleteDocument"
+                                        actions="deletedocument="
                                         collection="{{document.collection}}"
                                         document_id="{{document._id}}"
                                         class="position:absolute right:15px top:15px"
