@@ -23,7 +23,7 @@
         <main class="padding:10px" content_id="content">
             <div id="board" class="display:flex overflow:auto">
                 <div
-                    collection="testtags"
+                    array="testtags"
                     document
                     filter-sort-name="position"
                     render_id="column"
@@ -35,15 +35,15 @@
                     <div
                         template
                         render-as="column"
-                        document_id="{{column._id}}"
+                        object="{{column._id}}"
                         draggable
                         class="position:relative width:300px margin:10px background:whitesmoke height:calc(100vh_-_45px)">
                         <div
                             class="display:flex margin:15px font-size:18px color-dark-gray">
                             <div class="flex-grow:1">
                                 <span
-                                    collection="{{column.collection}}"
-                                    document_id="{{column._id}}"
+                                    array="{{column.array}}"
+                                    object="{{column._id}}"
                                     name="name"
                                     contenteditable
                                     class="padding:5px"></span>
@@ -51,8 +51,8 @@
                             <div>
                                 <a
                                     actions="deletedocument="
-                                    collection="{{column.collection}}"
-                                    document_id="{{column._id}}"
+                                    array="{{column.array}}"
+                                    object="{{column._id}}"
                                     ><i
                                         class="height:18px fill:#505050"
                                         src="/assets/svg/times.svg"></i
@@ -62,7 +62,7 @@
                         <div
                             class="height:calc(100vh_-_145px) padding:10px overflow:auto">
                             <div
-                                collection="testcontacts"
+                                array="testcontacts"
                                 filter-name="tags"
                                 filter-value="{{column._id}}"
                                 filter-operator="$eq"
@@ -76,13 +76,13 @@
                                 <div
                                     class="card position:relative margin-bottom:10px padding:10px background:white"
                                     template
-                                    value="{{document._id}}"
-                                    document_id="{{document._id}}"
+                                    value="{{object._id}}"
+                                    object="{{object._id}}"
                                     draggable>
                                     <a
                                         actions="deletedocument="
-                                        collection="{{document.collection}}"
-                                        document_id="{{document._id}}"
+                                        array="{{object.array}}"
+                                        object="{{object._id}}"
                                         class="position:absolute right:15px top:15px"
                                         ><i
                                             class="height:18px fill:#505050"
@@ -91,8 +91,8 @@
 
                                     <div class="width:100%">
                                         <img
-                                            collection="{{document.collection}}"
-                                            document_id="{{document._id}}"
+                                            array="{{object.array}}"
+                                            object="{{object._id}}"
                                             name="image"
                                             src="https://via.placeholder.com/150"
                                             width="100%" />
@@ -107,8 +107,8 @@
                                                 class="cocreate-badge margin-right:10px font-size:10px padding:0px_20px"></span>
                                         </div>
                                         <p
-                                            collection="{{document.collection}}"
-                                            document_id="{{document._id}}"
+                                            array="{{object.array}}"
+                                            object="{{object._id}}"
                                             name="name"
                                             contenteditable
                                             class="padding:5px"></p>
@@ -160,14 +160,14 @@
                             <form>
                                 <input
                                     type="hidden"
-                                    collection="testcontacts"
-                                    document_id=""
+                                    array="testcontacts"
+                                    object=""
                                     name="tags"
                                     value="{{column._id}}" />
                                 <input
                                     type="hidden"
-                                    collection="testcontacts"
-                                    document_id=""
+                                    array="testcontacts"
+                                    object=""
                                     name="name"
                                     value="untitled" />
                                 <a actions="save, reset"
@@ -186,8 +186,8 @@
                 <input
                     type="hidden"
                     pass_id="module_id"
-                    collection="testtags"
-                    document_id=""
+                    array="testtags"
+                    object=""
                     name="name"
                     value="untitled" />
                 <button

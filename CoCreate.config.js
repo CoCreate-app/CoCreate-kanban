@@ -4,8 +4,8 @@ module.exports = {
     "host": "",
     "sources": [
         {
-            "collection": "files",
-            "document": {
+            "array": "files",
+            "object": {
                 "_id": "6025f32c7a78a543a77c9220",
                 "name": "index.html",
                 "path": "/docs/kanban/index.html",
