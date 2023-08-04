@@ -25,10 +25,10 @@
                 <div
                     array="testtags"
                     document
-                    filter-sort-name="position"
+                    filter-sort-key="position"
                     render_id="column"
                     droppable
-                    dnd-group-name="column"
+                    dnd-group-key="column"
                     render-selector=":last-child"
                     class="display:flex flex-wrap:nowrap flex-direction:row">
                     <!-- Column -->
@@ -44,7 +44,7 @@
                                 <span
                                     array="{{column.array}}"
                                     object="{{column._id}}"
-                                    name="name"
+                                    key="name"
                                     contenteditable
                                     class="padding:5px"></span>
                             </div>
@@ -63,14 +63,14 @@
                             class="height:calc(100vh_-_145px) padding:10px overflow:auto">
                             <div
                                 array="testcontacts"
-                                filter-name="tags"
+                                filter-key="tags"
                                 filter-value="{{column._id}}"
                                 filter-operator="$eq"
-                                filter-sort-name="position"
+                                filter-sort-key="position"
                                 filter-sort-direction="asc"
                                 render-selector=":last-child"
                                 droppable
-                                dnd-group-name="card"
+                                dnd-group-key="card"
                                 class="display:flex flex-direction:column height:100%">
                                 <!-- Card -->
                                 <div
@@ -93,7 +93,7 @@
                                         <img
                                             array="{{object.array}}"
                                             object="{{object._id}}"
-                                            name="image"
+                                            key="image"
                                             src="https://via.placeholder.com/150"
                                             width="100%" />
                                     </div>
@@ -109,7 +109,7 @@
                                         <p
                                             array="{{object.array}}"
                                             object="{{object._id}}"
-                                            name="name"
+                                            key="name"
                                             contenteditable
                                             class="padding:5px"></p>
                                         <div
@@ -162,13 +162,13 @@
                                     type="hidden"
                                     array="testcontacts"
                                     object=""
-                                    name="tags"
+                                    key="tags"
                                     value="{{column._id}}" />
                                 <input
                                     type="hidden"
                                     array="testcontacts"
                                     object=""
-                                    name="name"
+                                    key="name"
                                     value="untitled" />
                                 <a actions="save, reset"
                                     ><i
@@ -188,7 +188,7 @@
                     pass_id="module_id"
                     array="testtags"
                     object=""
-                    name="name"
+                    key="name"
                     value="untitled" />
                 <button
                     actions="save, reset"
