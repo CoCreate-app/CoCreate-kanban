@@ -24,7 +24,7 @@
             <div id="board" class="display:flex overflow:auto">
                 <div
                     array="testtags"
-                    document
+                    object
                     filter-sort-key="position"
                     render_id="column"
                     droppable
@@ -50,7 +50,7 @@
                             </div>
                             <div>
                                 <a
-                                    actions="deletedocument="
+                                    actions="deleteObject"
                                     array="{{column.array}}"
                                     object="{{column._id}}"
                                     ><i
@@ -80,7 +80,7 @@
                                     object="{{object._id}}"
                                     draggable>
                                     <a
-                                        actions="deletedocument="
+                                        actions="deleteObject"
                                         array="{{object.array}}"
                                         object="{{object._id}}"
                                         class="position:absolute right:15px top:15px"
