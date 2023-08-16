@@ -1,3 +1,19 @@
+# [1.7.0](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.6.26...v1.7.0) (2023-08-16)
+
+
+### Bug Fixes
+
+* crud attributes renamed ([e02b24c](https://github.com/CoCreate-app/CoCreate-kanban/commit/e02b24c348672a9f0e53e72a6767f4a4cfc2b2a7))
+* replace -target -selector ([2901dfe](https://github.com/CoCreate-app/CoCreate-kanban/commit/2901dfe3ebdf331b12ceebc6b8f0e121d3e19cab))
+* webpack.config and package.json make use of mode=production instead of process.env ([9ba1bd7](https://github.com/CoCreate-app/CoCreate-kanban/commit/9ba1bd7e28e924d362d9bed261b65da1c2165d31))
+
+
+### Features
+
+* name attribute and variable renamed to key ([f23944c](https://github.com/CoCreate-app/CoCreate-kanban/commit/f23944c17d45c0fba8d34a2ab0decfa8808949a7))
+* renamed CRUD attributes and params ([d9fc398](https://github.com/CoCreate-app/CoCreate-kanban/commit/d9fc3980fae1c849e0f7759f377ac4b28ad1a0ba))
+* update template_id to render-selector attribute. update filter attributes to filter selector-attributes ([2d03e3b](https://github.com/CoCreate-app/CoCreate-kanban/commit/2d03e3b3890b2630924120021749d85bcb306543))
+
 ## [1.6.26](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.6.25...v1.6.26) (2023-06-14)
 
 
