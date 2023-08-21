@@ -1,3 +1,12 @@
+## [1.8.1](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.8.0...v1.8.1) (2023-08-21)
+
+
+### Bug Fixes
+
+* /dist/CoCreate.js updated to https://CoCreate.app/dist/CoCreate.js ([8d85a86](https://github.com/CoCreate-app/CoCreate-kanban/commit/8d85a8618da91c133943967faf4e98fcfdd76efc))
+* replace cdn with /dist ([27a24f6](https://github.com/CoCreate-app/CoCreate-kanban/commit/27a24f6b554c7af9045bb034b75741c2a70cbd07))
+* update file uploader ([52b8659](https://github.com/CoCreate-app/CoCreate-kanban/commit/52b86590287785006083583f74f62e5309f6272a))
+
 # [1.8.0](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.7.0...v1.8.0) (2023-08-17)
 
 
