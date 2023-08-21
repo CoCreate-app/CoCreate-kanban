@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.8.1...v1.9.0) (2023-08-21)
+
+
+### Features
+
+* Update cocreate dependencies for the latest features and bug fixes ([5577bd5](https://github.com/CoCreate-app/CoCreate-kanban/commit/5577bd56e5c9a54e6acdc05b6243b2d784beaaa5))
+
 ## [1.8.1](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.8.0...v1.8.1) (2023-08-21)
 
 
