@@ -1,3 +1,11 @@
+## [1.9.2](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.9.1...v1.9.2) (2023-09-18)
+
+
+### Bug Fixes
+
+*  Add path and pathname ([3ba66e6](https://github.com/CoCreate-app/CoCreate-kanban/commit/3ba66e67ebf80885be0c06b2aa44fff3a3f794d6))
+* Update CoCreate depndencies to latest versions ([e543646](https://github.com/CoCreate-app/CoCreate-kanban/commit/e5436460181245e03ba0d63348f6bdb245c98958))
+
 ## [1.9.1](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.9.0...v1.9.1) (2023-08-21)
 
 
