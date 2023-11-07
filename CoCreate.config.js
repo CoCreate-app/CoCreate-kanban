@@ -12,8 +12,7 @@ module.exports = {
                 "pathname": "/docs/kanban/index.html",
                 "src": "{{./docs/index.html}}",
                 "host": [
-                    "*",
-                    "general.cocreate.app"
+                    "*"
                 ],
                 "directory": "kanban",
                 "content-type": "{{content-type}}",
