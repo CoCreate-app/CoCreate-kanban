@@ -1,3 +1,11 @@
+## [1.9.3](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.9.2...v1.9.3) (2023-11-09)
+
+
+### Bug Fixes
+
+* meta name typo ([f9dd2b9](https://github.com/CoCreate-app/CoCreate-kanban/commit/f9dd2b9648e63389bf57444acd01c59684fb208a))
+* update host ([2955e7e](https://github.com/CoCreate-app/CoCreate-kanban/commit/2955e7eea3619e9c7bf525853c93179ca1ffeace))
+
 ## [1.9.2](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.9.1...v1.9.2) (2023-09-18)
 
 
