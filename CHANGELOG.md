@@ -1,3 +1,16 @@
+# [1.11.0](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.10.0...v1.11.0) (2023-11-25)
+
+
+### Bug Fixes
+
+* pass attributes renamed to state ([7b5e6f5](https://github.com/CoCreate-app/CoCreate-kanban/commit/7b5e6f53f51dc50a578ed54842fa25c31823ba86))
+* update nav, edit button and css path ([df17dbd](https://github.com/CoCreate-app/CoCreate-kanban/commit/df17dbd4f34d542fced1248f951c64fa4c042312))
+
+
+### Features
+
+* upgrade dependencies for latest features and fixes ([4abe0f0](https://github.com/CoCreate-app/CoCreate-kanban/commit/4abe0f0d35a1daca2732706b13d686fb2e86672b))
+
 # [1.10.0](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.9.4...v1.10.0) (2023-11-19)
 
 
