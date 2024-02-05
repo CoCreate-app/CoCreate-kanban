@@ -1,3 +1,10 @@
+## [1.12.1](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.12.0...v1.12.1) (2024-02-05)
+
+
+### Bug Fixes
+
+* Removed https://cdn.cocreate.app/latest/CoCreate.min.css ([59d290d](https://github.com/CoCreate-app/CoCreate-kanban/commit/59d290ddca8445007bde597cd24ba4191fe5dcc8))
+
 # [1.12.0](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.11.0...v1.12.0) (2023-11-25)
 
 
