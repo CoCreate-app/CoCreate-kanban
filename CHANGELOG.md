@@ -1,3 +1,11 @@
+## [1.12.3](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.12.2...v1.12.3) (2024-06-12)
+
+
+### Bug Fixes
+
+* bump cocreate dependencies ([a168921](https://github.com/CoCreate-app/CoCreate-kanban/commit/a168921d703ee34c259f498d9604db4752c7c455))
+* svg icon class ([2a5bf56](https://github.com/CoCreate-app/CoCreate-kanban/commit/2a5bf568539ef2c650f3d12dd5f038ae1de72666))
+
 ## [1.12.2](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.12.1...v1.12.2) (2024-04-29)
 
 
