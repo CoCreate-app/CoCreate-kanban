@@ -1,3 +1,16 @@
+# [1.13.0](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.12.3...v1.13.0) (2024-11-04)
+
+
+### Bug Fixes
+
+* pretier.config.js and file formating ([5d1f8e8](https://github.com/CoCreate-app/CoCreate-kanban/commit/5d1f8e8505cf71f4e3d83b5c66dce8341e11ef69))
+
+
+### Features
+
+* add prettier.config.js and format files ([0d76980](https://github.com/CoCreate-app/CoCreate-kanban/commit/0d76980fd406fca133c00c05a95cf39a26d650c5))
+* add prettier.config.js and format files ([77a7561](https://github.com/CoCreate-app/CoCreate-kanban/commit/77a75618cc2f14808c47b1993777d0c82b4eb055))
+
 ## [1.12.3](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.12.2...v1.12.3) (2024-06-12)
 
 
