@@ -1,3 +1,10 @@
+## [1.13.1](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.13.0...v1.13.1) (2025-01-18)
+
+
+### Bug Fixes
+
+* update filter-query-key ([27b95e4](https://github.com/CoCreate-app/CoCreate-kanban/commit/27b95e46f98b06b7042aeafb7950d7143062093f))
+
 # [1.13.0](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.12.3...v1.13.0) (2024-11-04)
 
 
