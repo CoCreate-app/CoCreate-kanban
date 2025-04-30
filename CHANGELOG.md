@@ -1,3 +1,13 @@
+## [1.13.2](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.13.1...v1.13.2) (2025-04-30)
+
+
+### Bug Fixes
+
+* added css-loader ([acea0bd](https://github.com/CoCreate-app/CoCreate-kanban/commit/acea0bd402a23631bbfda8ee4980d254be84435f))
+* update query attributes ([7491c9a](https://github.com/CoCreate-app/CoCreate-kanban/commit/7491c9ae432c079ddbf83b804f57815b668ddc5d))
+* updated cocreate modules versions ([252c7f7](https://github.com/CoCreate-app/CoCreate-kanban/commit/252c7f71fb9b35ff1550f162f6e7ccce6088c3ae))
+* webpack.config and devdependencies ([728b6c5](https://github.com/CoCreate-app/CoCreate-kanban/commit/728b6c5474394d771c3b331f86bb8a0e362a722b))
+
 ## [1.13.1](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.13.0...v1.13.1) (2025-01-18)
 
 
