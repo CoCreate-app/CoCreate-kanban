@@ -1,3 +1,10 @@
+## [1.13.4](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.13.3...v1.13.4) (2026-01-18)
+
+
+### Bug Fixes
+
+* update worklow ([6296675](https://github.com/CoCreate-app/CoCreate-kanban/commit/6296675cb0cae4ebb10dd21582cb39c1e3805eb6))
+
 ## [1.13.3](https://github.com/CoCreate-app/CoCreate-kanban/compare/v1.13.2...v1.13.3) (2025-05-01)
 
 
